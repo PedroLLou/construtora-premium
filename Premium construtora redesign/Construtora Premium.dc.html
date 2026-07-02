@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta charset="utf-8" />
+  <title>Construtora Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #0B111F; -webkit-font-smoothing: antialiased; }
+    ::selection { background: rgba(227,166,59,.35); }
+  </style>
+</helmet>
+
+<div style="font-family: 'Archivo', sans-serif; background: #0B111F; color: #EDEBE4; overflow-x: hidden;">
+
+  <!-- ============ HEADER ============ -->
+  <header data-screen-label="Header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 18px clamp(20px, 3vw, 48px); gap: 24px; background: rgba(11,17,31,.82); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(227,166,59,.18);">
+    <a href="#inicio" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #EDEBE4; flex-shrink: 0;">
+      <img src="assets/logo.png" alt="Construtora Premium" style="width: 44px; height: 44px; object-fit: contain;" />
+      <span style="display: flex; flex-direction: column; line-height: 1.1;">
+        <span style="font-family: 'Marcellus', serif; font-size: 19px; letter-spacing: .06em;">CONSTRUTORA</span>
+        <span style="font-size: 11px; letter-spacing: .42em; color: #E3A63B; font-weight: 600;">PREMIUM</span>
+      </span>
+    </a>
+    <nav style="display: flex; align-items: center; gap: clamp(14px, 2.2vw, 36px); min-width: 0;">
+      <a href="#sobre" style="color: rgba(237,235,228,.72); text-decoration: none; font-size: 13px; letter-spacing: .08em; font-weight: 500; white-space: nowrap;" style-hover="color: #E3A63B;">QUEM SOMOS</a>
+      <a href="#servicos" style="color: rgba(237,235,228,.72); text-decoration: none; font-size: 13px; letter-spacing: .08em; font-weight: 500; white-space: nowrap;" style-hover="color: #E3A63B;">SERVIÇOS</a>
+      <a href="#obras" style="color: rgba(237,235,228,.72); text-decoration: none; font-size: 13px; letter-spacing: .08em; font-weight: 500; white-space: nowrap;" style-hover="color: #E3A63B;">OBRAS</a>
+      <a href="#contato" style="color: rgba(237,235,228,.72); text-decoration: none; font-size: 13px; letter-spacing: .08em; font-weight: 500; white-space: nowrap;" style-hover="color: #E3A63B;">CONTATO</a>
+      <a href="{{ whatsUrl }}" target="_blank" style="padding: 12px clamp(14px, 1.8vw, 26px); background: #E3A63B; color: #14100A; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: .1em; white-space: nowrap;" style-hover="background: #F0BA58;">SOLICITAR ORÇAMENTO</a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="inicio" data-screen-label="Hero" style="position: relative; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 160px 48px 0;">
+    <img src="assets/obra-base-operacoes.jpg" alt="Obra pública executada pela Construtora Premium" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%;" />
+    <sc-if value="{{ heroTrocado }}" hint-placeholder-val="{{ false }}">
+      <img src="{{ heroSrc }}" alt="Obra pública executada pela Construtora Premium" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%;" />
+    </sc-if>
+    <div style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(11,17,31,.96) 30%, rgba(11,17,31,.72) 60%, rgba(11,17,31,.45) 100%);"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(to top, #0B111F 0%, rgba(11,17,31,0) 35%);"></div>
+
+    <div style="position: relative; max-width: 1280px; margin: 0 auto; width: 100%;">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 28px;">
+        <span style="width: 56px; height: 1px; background: #E3A63B;"></span>
+        <span style="font-size: 13px; letter-spacing: .38em; color: #E3A63B; font-weight: 600;">OBRAS PÚBLICAS EM GOIÁS</span>
+      </div>
+      <h1 style="font-family: 'Marcellus', serif; font-size: clamp(44px, 5.4vw, 78px); line-height: 1.08; margin: 0 0 28px; max-width: 820px; font-weight: 400;">Engenharia pública com padrão de excelência.</h1>
+      <p style="font-size: 19px; line-height: 1.7; color: rgba(237,235,228,.78); max-width: 620px; margin: 0 0 44px;">Projetos, construção e reforma para PM-GO, PC-GO, MPGO e SEDUC. Delegacias, batalhões e colégios militares entregues com o rigor que a fiscalização exige.</p>
+      <div style="display: flex; gap: 18px; align-items: center;">
+        <a href="#obras" style="padding: 18px 40px; background: #E3A63B; color: #14100A; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: .1em;" style-hover="background: #F0BA58;">VER PORTFÓLIO</a>
+        <a href="{{ whatsUrl }}" target="_blank" style="padding: 17px 40px; border: 1px solid rgba(237,235,228,.35); color: #EDEBE4; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: .1em;" style-hover="border-color: #E3A63B; color: #E3A63B;">FALAR COM ENGENHARIA</a>
+      </div>
+
+      <div style="display: flex; gap: 64px; margin-top: 88px; padding-top: 36px; border-top: 1px solid rgba(237,235,228,.16); max-width: 720px;">
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-family: 'Marcellus', serif; font-size: 44px; color: #E3A63B;">65+</span>
+          <span style="font-size: 13px; letter-spacing: .14em; color: rgba(237,235,228,.6);">OBRAS ENTREGUES</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-family: 'Marcellus', serif; font-size: 44px; color: #E3A63B;">50.000 m²</span>
+          <span style="font-size: 13px; letter-spacing: .14em; color: rgba(237,235,228,.6);">DE ÁREA CONSTRUÍDA</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-family: 'Marcellus', serif; font-size: 44px; color: #E3A63B;">4</span>
+          <span style="font-size: 13px; letter-spacing: .14em; color: rgba(237,235,228,.6);">ÓRGÃOS ATENDIDOS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÓRGÃOS ============ -->
+  <section id="orgaos" data-screen-label="Órgãos" style="border-top: 1px solid rgba(227,166,59,.18); border-bottom: 1px solid rgba(227,166,59,.18); background: #0E1526;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 30px 48px; display: grid; grid-template-columns: auto 1fr 1fr 1fr 1fr; gap: 32px; align-items: center;">
+      <span style="font-size: 12px; letter-spacing: .3em; color: rgba(237,235,228,.5); font-weight: 600;">ATENDEMOS</span>
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <span style="font-family: 'Marcellus', serif; font-size: 20px; color: #EDEBE4;">PM-GO</span>
+        <span style="font-size: 12px; color: rgba(237,235,228,.5); letter-spacing: .06em;">Polícia Militar</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <span style="font-family: 'Marcellus', serif; font-size: 20px; color: #EDEBE4;">PC-GO</span>
+        <span style="font-size: 12px; color: rgba(237,235,228,.5); letter-spacing: .06em;">Polícia Civil</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <span style="font-family: 'Marcellus', serif; font-size: 20px; color: #EDEBE4;">MPGO</span>
+        <span style="font-size: 12px; color: rgba(237,235,228,.5); letter-spacing: .06em;">Ministério Público</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <span style="font-family: 'Marcellus', serif; font-size: 20px; color: #EDEBE4;">SEDUC</span>
+        <span style="font-size: 12px; color: rgba(237,235,228,.5); letter-spacing: .06em;">Secretaria de Educação</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============ -->
+  <section id="servicos" data-screen-label="Serviços" style="padding: 120px 48px;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+        <span style="width: 56px; height: 1px; background: #E3A63B;"></span>
+        <span style="font-size: 13px; letter-spacing: .38em; color: #E3A63B; font-weight: 600;">NOSSOS SERVIÇOS</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-bottom: 72px;">
+        <h2 style="font-family: 'Marcellus', serif; font-size: clamp(32px, 3.4vw, 48px); line-height: 1.15; margin: 0; max-width: 560px; font-weight: 400;">Do projeto à entrega, tudo dentro da norma.</h2>
+        <p style="font-size: 16px; line-height: 1.7; color: rgba(237,235,228,.62); max-width: 420px; margin: 0;">Atuação especializada em obras de segurança pública e ensino militar, com documentação completa para licitações e órgãos fiscalizadores.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px;">
+        <div style="background: #101827; border: 1px solid rgba(237,235,228,.08); padding: 44px 36px; display: flex; flex-direction: column; gap: 18px;" style-hover="border-color: rgba(227,166,59,.45);">
+          <span style="font-family: 'Marcellus', serif; font-size: 15px; color: #E3A63B; letter-spacing: .2em;">01</span>
+          <h3 style="font-family: 'Marcellus', serif; font-size: 26px; margin: 0; font-weight: 400;">Elaboração de projetos</h3>
+          <p style="font-size: 15px; line-height: 1.75; color: rgba(237,235,228,.62); margin: 0;">Projetos arquitetônicos, estruturais e complementares com toda a documentação técnica exigida em licitações, do memorial descritivo à ART.</p>
+        </div>
+        <div style="background: #101827; border: 1px solid rgba(237,235,228,.08); padding: 44px 36px; display: flex; flex-direction: column; gap: 18px;" style-hover="border-color: rgba(227,166,59,.45);">
+          <span style="font-family: 'Marcellus', serif; font-size: 15px; color: #E3A63B; letter-spacing: .2em;">02</span>
+          <h3 style="font-family: 'Marcellus', serif; font-size: 26px; margin: 0; font-weight: 400;">Construção</h3>
+          <p style="font-size: 15px; line-height: 1.75; color: rgba(237,235,228,.62); margin: 0;">Execução de obras novas para colégios militares, delegacias e batalhões, com gestão de canteiro, medição semanal e cumprimento rigoroso de prazos.</p>
+        </div>
+        <div style="background: #101827; border: 1px solid rgba(237,235,228,.08); padding: 44px 36px; display: flex; flex-direction: column; gap: 18px;" style-hover="border-color: rgba(227,166,59,.45);">
+          <span style="font-family: 'Marcellus', serif; font-size: 15px; color: #E3A63B; letter-spacing: .2em;">03</span>
+          <h3 style="font-family: 'Marcellus', serif; font-size: 26px; margin: 0; font-weight: 400;">Reforma e ampliação</h3>
+          <p style="font-size: 15px; line-height: 1.75; color: rgba(237,235,228,.62); margin: 0;">Reformas estruturais, modernizações e ampliações sem interromper a operação das unidades, com protocolos de segurança e cronograma assistido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OBRAS ============ -->
+  <section id="obras" data-screen-label="Obras" style="padding: 0 48px 120px;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+        <span style="width: 56px; height: 1px; background: #E3A63B;"></span>
+        <span style="font-size: 13px; letter-spacing: .38em; color: #E3A63B; font-weight: 600;">PORTFÓLIO</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-bottom: 64px;">
+        <h2 style="font-family: 'Marcellus', serif; font-size: clamp(32px, 3.4vw, 48px); line-height: 1.15; margin: 0; font-weight: 400;">Obras em destaque</h2>
+        <span style="font-size: 15px; color: rgba(237,235,228,.55);">Seleção de projetos entregues para instituições públicas de Goiás.</span>
+      </div>
+
+      <!-- Destaque -->
+      <a href="{{ whatsUrl }}" target="_blank" style="position: relative; display: block; height: 520px; overflow: hidden; margin-bottom: 28px; text-decoration: none; color: #EDEBE4; border: 1px solid rgba(237,235,228,.1);">
+        <img src="assets/obra-base-operacoes.jpg" alt="Reforma da Base de Operações Especiais da Polícia Civil" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease;" />
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,17,31,.95) 0%, rgba(11,17,31,.25) 55%, rgba(11,17,31,.1) 100%);"></div>
+        <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 44px 48px; display: flex; justify-content: space-between; align-items: flex-end; gap: 32px;">
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <span style="font-size: 12px; letter-spacing: .3em; color: #E3A63B; font-weight: 700;">DESTAQUE · POLÍCIA CIVIL · GOIÂNIA/GO</span>
+            <span style="font-family: 'Marcellus', serif; font-size: 34px; line-height: 1.2;">Reforma da Base CORE/GT3</span>
+            <span style="font-size: 15px; line-height: 1.65; color: rgba(237,235,228,.72); max-width: 640px;">Reforma completa da base de operações especiais: ampliação de vestiários, academia climatizada, piso epóxi em toda a extensão, novas redes elétrica e hidrossanitária.</span>
+          </div>
+          <div style="display: flex; gap: 28px; flex-shrink: 0;">
+            <div style="display: flex; flex-direction: column; gap: 4px; align-items: flex-end;">
+              <span style="font-family: 'Marcellus', serif; font-size: 22px; color: #E3A63B;">8 meses</span>
+              <span style="font-size: 12px; letter-spacing: .14em; color: rgba(237,235,228,.55);">PRAZO EXECUTADO</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Grid de obras -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px;">
+        <sc-for list="{{ obras }}" as="obra" hint-placeholder-count="6">
+          <div style="position: relative; height: 380px; overflow: hidden; border: 1px solid rgba(237,235,228,.1);">
+            <img src="{{ obra.foto }}" alt="{{ obra.titulo }}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" />
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,17,31,.94) 0%, rgba(11,17,31,.15) 50%, rgba(11,17,31,.05) 100%);"></div>
+            <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 28px; display: flex; flex-direction: column; gap: 8px;">
+              <span style="font-size: 11px; letter-spacing: .26em; color: #E3A63B; font-weight: 700;">{{ obra.orgao }}</span>
+              <span style="font-family: 'Marcellus', serif; font-size: 21px; line-height: 1.25;">{{ obra.titulo }}</span>
+              <span style="font-size: 13px; color: rgba(237,235,228,.6);">{{ obra.local }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAMAS ============ -->
+  <section id="programas" data-screen-label="Programas" style="background: #0E1526; border-top: 1px solid rgba(227,166,59,.18); border-bottom: 1px solid rgba(227,166,59,.18); padding: 120px 48px;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+        <span style="width: 56px; height: 1px; background: #E3A63B;"></span>
+        <span style="font-size: 13px; letter-spacing: .38em; color: #E3A63B; font-weight: 600;">PROGRAMAS DO ESTADO</span>
+      </div>
+      <h2 style="font-family: 'Marcellus', serif; font-size: clamp(32px, 3.4vw, 48px); line-height: 1.15; margin: 0 0 64px; max-width: 720px; font-weight: 400;">Fluência nos instrumentos do Governo de Goiás</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px;">
+        <div style="border: 1px solid rgba(227,166,59,.3); padding: 48px 44px; display: flex; flex-direction: column; gap: 16px; background: rgba(227,166,59,.05);">
+          <span style="font-family: 'Marcellus', serif; font-size: 30px; color: #E3A63B; letter-spacing: .08em;">REFORMAR</span>
+          <span style="font-size: 13px; letter-spacing: .22em; color: rgba(237,235,228,.55); font-weight: 600;">MANUTENÇÃO PLANEJADA</span>
+          <p style="font-size: 16px; line-height: 1.75; color: rgba(237,235,228,.7); margin: 0;">Programa estadual da SEDUC para manutenção e reformas em escolas públicas de Goiás. Planejamento, execução e prestação de contas dentro do fluxo do programa.</p>
+        </div>
+        <div style="border: 1px solid rgba(227,166,59,.3); padding: 48px 44px; display: flex; flex-direction: column; gap: 16px; background: rgba(227,166,59,.05);">
+          <span style="font-family: 'Marcellus', serif; font-size: 30px; color: #E3A63B; letter-spacing: .08em;">EMERGENCIAL</span>
+          <span style="font-size: 13px; letter-spacing: .22em; color: rgba(237,235,228,.55); font-weight: 600;">RESPOSTA RÁPIDA</span>
+          <p style="font-size: 16px; line-height: 1.75; color: rgba(237,235,228,.7); margin: 0;">Modalidade de contratação para intervenções urgentes em estruturas públicas, com mobilização imediata de equipe e prazo reduzido de execução.</p>
+        </div>
+      </div>
+      <p style="font-size: 14px; color: rgba(237,235,228,.5); margin: 36px 0 0; letter-spacing: .04em;">Também atendemos licitações tradicionais, convênios e recursos próprios.</p>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section id="sobre" data-screen-label="Sobre" style="padding: 120px 48px;">
+    <div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+      <div style="position: relative;">
+        <img src="assets/equipe-reuniao.jpg" alt="Equipe da Construtora Premium em reunião institucional" style="width: 100%; height: 560px; object-fit: cover; display: block; border: 1px solid rgba(237,235,228,.1);" />
+        <div style="position: absolute; bottom: -1px; left: -1px; background: #E3A63B; color: #14100A; padding: 22px 30px; display: flex; flex-direction: column; gap: 2px;">
+          <span style="font-family: 'Marcellus', serif; font-size: 26px;">CREA-GO</span>
+          <span style="font-size: 12px; letter-spacing: .16em; font-weight: 700;">RESPONSABILIDADE TÉCNICA</span>
+        </div>
+      </div>
+      <div>
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <span style="width: 56px; height: 1px; background: #E3A63B;"></span>
+          <span style="font-size: 13px; letter-spacing: .38em; color: #E3A63B; font-weight: 600;">QUEM SOMOS</span>
+        </div>
+        <h2 style="font-family: 'Marcellus', serif; font-size: clamp(32px, 3.4vw, 48px); line-height: 1.15; margin: 0 0 28px; font-weight: 400;">A linguagem do setor público, falada com fluência.</h2>
+        <p style="font-size: 17px; line-height: 1.8; color: rgba(237,235,228,.72); margin: 0 0 20px;">A Construtora Premium é especializada em obras institucionais para órgãos de segurança, justiça e ensino público em Goiás. Conhecemos as exigências de cada fiscalização e entregamos cada obra com habite-se, ART e termo de recebimento sem pendências.</p>
+        <p style="font-size: 17px; line-height: 1.8; color: rgba(237,235,228,.72); margin: 0 0 40px;">Cada contrato segue plano de prazo formal, medições semanais documentadas e relatório de obra para o gestor. O resultado são mais de 65 obras entregues e 50.000 m² construídos para o Estado.</p>
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <span style="width: 8px; height: 8px; background: #E3A63B; flex-shrink: 0;"></span>
+            <span style="font-size: 16px; color: rgba(237,235,228,.85);">Entrega com documentação completa para a fiscalização</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <span style="width: 8px; height: 8px; background: #E3A63B; flex-shrink: 0;"></span>
+            <span style="font-size: 16px; color: rgba(237,235,228,.85);">Cronograma com medição semanal e relatório ao gestor</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <span style="width: 8px; height: 8px; background: #E3A63B; flex-shrink: 0;"></span>
+            <span style="font-size: 16px; color: rgba(237,235,228,.85);">Obras sem interrupção da operação das unidades</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="cta" data-screen-label="CTA" style="position: relative; padding: 140px 48px; overflow: hidden;">
+    <img src="assets/maquinas-cat.jpg" alt="Maquinário pesado em obra pública" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" />
+    <div style="position: absolute; inset: 0; background: rgba(11,17,31,.88);"></div>
+    <div style="position: relative; max-width: 900px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 28px;">
+      <span style="font-size: 13px; letter-spacing: .38em; color: #E3A63B; font-weight: 600;">ATENDIMENTO INSTITUCIONAL</span>
+      <h2 style="font-family: 'Marcellus', serif; font-size: clamp(34px, 4vw, 56px); line-height: 1.15; margin: 0; font-weight: 400;">Vai abrir licitação ou tem uma reforma emergencial?</h2>
+      <p style="font-size: 18px; line-height: 1.7; color: rgba(237,235,228,.75); max-width: 640px; margin: 0;">Resposta inicial em até 1 dia útil. Para demandas emergenciais, retorno no mesmo dia.</p>
+      <div style="display: flex; gap: 18px; margin-top: 12px;">
+        <a href="{{ whatsUrl }}" target="_blank" style="padding: 18px 44px; background: #E3A63B; color: #14100A; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: .1em;" style-hover="background: #F0BA58;">CHAMAR NO WHATSAPP</a>
+        <a href="tel:+5562998259418" style="padding: 17px 44px; border: 1px solid rgba(237,235,228,.35); color: #EDEBE4; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: .1em;" style-hover="border-color: #E3A63B; color: #E3A63B;">(62) 99825-9418</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="contato" data-screen-label="Footer" style="border-top: 1px solid rgba(227,166,59,.18); padding: 80px 48px 40px; background: #090E1A;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 64px; margin-bottom: 64px;">
+        <div style="display: flex; flex-direction: column; gap: 22px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <img src="assets/logo.png" alt="Construtora Premium" style="width: 48px; height: 48px; object-fit: contain;" />
+            <span style="display: flex; flex-direction: column; line-height: 1.1;">
+              <span style="font-family: 'Marcellus', serif; font-size: 20px; letter-spacing: .06em;">CONSTRUTORA</span>
+              <span style="font-size: 11px; letter-spacing: .42em; color: #E3A63B; font-weight: 600;">PREMIUM</span>
+            </span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.75; color: rgba(237,235,228,.55); margin: 0; max-width: 420px;">Construtora especializada em obras públicas em Goiás. Colégios militares, delegacias e batalhões com engenharia, construção, reforma e elaboração de projetos.</p>
+          <a href="https://www.instagram.com/construtora_premiumm/" target="_blank" style="font-size: 14px; color: rgba(237,235,228,.6); text-decoration: none; letter-spacing: .04em;" style-hover="color: #E3A63B;">@construtora_premiumm</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <span style="font-size: 12px; letter-spacing: .3em; color: #E3A63B; font-weight: 700;">NAVEGAÇÃO</span>
+          <a href="#inicio" style="font-size: 15px; color: rgba(237,235,228,.65); text-decoration: none;" style-hover="color: #E3A63B;">Início</a>
+          <a href="#sobre" style="font-size: 15px; color: rgba(237,235,228,.65); text-decoration: none;" style-hover="color: #E3A63B;">Quem Somos</a>
+          <a href="#obras" style="font-size: 15px; color: rgba(237,235,228,.65); text-decoration: none;" style-hover="color: #E3A63B;">Obras</a>
+          <a href="#contato" style="font-size: 15px; color: rgba(237,235,228,.65); text-decoration: none;" style-hover="color: #E3A63B;">Contato</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <span style="font-size: 12px; letter-spacing: .3em; color: #E3A63B; font-weight: 700;">CONTATO</span>
+          <a href="tel:+5562998259418" style="font-size: 15px; color: rgba(237,235,228,.65); text-decoration: none;" style-hover="color: #E3A63B;">(62) 99825-9418</a>
+          <a href="{{ whatsUrl }}" target="_blank" style="font-size: 15px; color: rgba(237,235,228,.65); text-decoration: none;" style-hover="color: #E3A63B;">WhatsApp</a>
+          <a href="mailto:premiumservicosgo@gmail.com" style="font-size: 15px; color: rgba(237,235,228,.65); text-decoration: none;" style-hover="color: #E3A63B;">premiumservicosgo@gmail.com</a>
+        </div>
+      </div>
+      <div style="border-top: 1px solid rgba(237,235,228,.1); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; gap: 24px;">
+        <span style="font-size: 13px; color: rgba(237,235,228,.45);">© 2026 Construtora Premium Ltda. · CREA-GO</span>
+        <span style="font-size: 13px; color: rgba(237,235,228,.45);">Atuação em todo o Estado de Goiás</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <sc-if value="{{ mostrarWhatsFlutuante }}" hint-placeholder-val="{{ true }}">
+    <a href="{{ whatsUrl }}" target="_blank" title="Falar no WhatsApp" style="position: fixed; right: 28px; bottom: 28px; z-index: 60; width: 60px; height: 60px; border-radius: 50%; background: #E3A63B; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.45); text-decoration: none;" style-hover="background: #F0BA58;">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="#14100A"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.83 14.12c-.25.7-1.45 1.33-2.02 1.38-.52.05-1.17.24-3.95-.82-3.34-1.32-5.47-4.73-5.63-4.95-.16-.22-1.35-1.8-1.35-3.43s.86-2.43 1.16-2.76c.3-.33.66-.41.88-.41l.63.01c.2.01.47-.08.74.56.27.65.93 2.27 1.01 2.43.08.16.14.36.03.58-.11.22-.16.36-.32.55l-.48.56c-.16.16-.32.34-.14.66.18.32.82 1.35 1.76 2.19 1.21 1.08 2.23 1.41 2.55 1.57.32.16.5.13.69-.08.19-.22.79-.92 1-1.24.21-.32.42-.26.71-.16.29.11 1.85.87 2.16 1.03.32.16.53.24.61.37.08.14.08.79-.17 1.49z"/></svg>
+    </a>
+  </sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;fotoDoHero&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;Base de Operações&quot;, &quot;Maquinário&quot;, &quot;4º Distrito Policial&quot;], &quot;default&quot;: &quot;Base de Operações&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Hero&quot; },
+  &quot;whatsappFlutuante&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Contato&quot; }
+}">
+class Component extends DCLogic {
+  renderVals() {
+    const fotos = {
+      "Base de Operações": "assets/obra-base-operacoes.jpg",
+      "Maquinário": "assets/maquinas-cat.jpg",
+      "4º Distrito Policial": "assets/obra-4dp-aparecida.jpg"
+    };
+    const heroEscolha = this.props.fotoDoHero ?? "Base de Operações";
+    return {
+      heroSrc: fotos[heroEscolha] ?? fotos["Base de Operações"],
+      heroTrocado: (fotos[heroEscolha] ?? fotos["Base de Operações"]) !== fotos["Base de Operações"],
+      mostrarWhatsFlutuante: this.props.whatsappFlutuante ?? true,
+      whatsUrl: "https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
+      obras: [
+        { foto: "assets/obra-4dp-aparecida.jpg", orgao: "POLÍCIA CIVIL", titulo: "4º Distrito Policial e Central de Flagrantes", local: "Aparecida de Goiânia/GO" },
+        { foto: "assets/obra-brasao-17dp.jpg", orgao: "POLÍCIA CIVIL", titulo: "Revitalização da 17ª Delegacia de Polícia", local: "Goiânia/GO" },
+        { foto: "assets/obra-pm-pintura.jpg", orgao: "POLÍCIA MILITAR", titulo: "Revitalização de fachada institucional", local: "Goiânia/GO" },
+        { foto: "assets/obra-cupula-brasao.jpg", orgao: "POLÍCIA CIVIL", titulo: "Instalação de brasão e recuperação de cúpula", local: "Goiânia/GO" },
+        { foto: "assets/obra-colegio-patio.jpg", orgao: "SEDUC", titulo: "Manutenção de colégio estadual, Programa Reformar", local: "Goiânia/GO" },
+        { foto: "assets/obra-17-distrito.jpg", orgao: "POLÍCIA CIVIL", titulo: "Adequações no 17º Distrito Policial", local: "Goiânia/GO" }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

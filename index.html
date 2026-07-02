@@ -9,17 +9,17 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:url" content="https://premiumconstrutora.com.br/">
-<meta property="og:title" content="Construtora Premium — Sua obra pública entregue como o órgão exige.">
-<meta property="og:description" content="Projetos, construção e reforma para PM-GO, PC-GO, MPGO e SEDUC — com o rigor que colégios militares, delegacias e batalhões exigem em Goiás.">
+<meta property="og:title" content="Construtora Premium — Engenharia pública com padrão de excelência.">
+<meta property="og:description" content="Projetos, construção e reforma para PM-GO, PC-GO, MPGO e SEDUC. Delegacias, batalhões e colégios militares entregues com o rigor que a fiscalização exige.">
 <meta property="og:image" content="https://premiumconstrutora.com.br/img/reforma-base-core-gt3-policia-civil-goiania.jpg">
-<meta name="theme-color" content="#0F1B3D">
+<meta name="theme-color" content="#0B111F">
 <link rel="icon" type="image/png" href="img/logo-construtora-premium-192.png">
 <link rel="apple-touch-icon" href="img/logo-construtora-premium-192.png">
 <link rel="preload" as="image" href="img/reforma-base-core-gt3-policia-civil-goiania-mobile.jpg" media="(max-width:640px)">
 <link rel="preload" as="image" href="img/reforma-base-core-gt3-policia-civil-goiania.jpg" media="(min-width:641px)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,524 +48,406 @@
 </script>
 <style>
 :root{
-  --navy:#0F1B3D;
-  --navy-deep:#0A1330;
-  --cream:#F5F2EB;
-  --white:#FFFFFF;
-  --concrete:#6E7480;
-  --concrete-dark:#3C4250;
-  --gold:#C9A25B;
-  --gold-soft:#D9BC86;
-  --line:rgba(15,27,61,.14);
-  --line-light:rgba(255,255,255,.18);
+  --bg:#0B111F;
+  --panel:#0E1526;
+  --card:#101827;
+  --footer-bg:#090E1A;
+  --ink:#EDEBE4;
+  --muted:rgba(237,235,228,.62);
+  --soft:rgba(237,235,228,.72);
+  --faint:rgba(237,235,228,.5);
+  --gold:#E3A63B;
+  --gold-hover:#F0BA58;
+  --gold-dark:#14100A;
+  --line-gold:rgba(227,166,59,.18);
+  --line:rgba(237,235,228,.1);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  font-family:'Jost',sans-serif;
-  font-weight:400;
-  color:var(--concrete-dark);
-  background:var(--cream);
+  font-family:'Archivo',sans-serif;
+  background:var(--bg);
+  color:var(--ink);
   line-height:1.6;
+  overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
 }
+::selection{background:rgba(227,166,59,.35)}
 img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
-section{scroll-margin-top:96px}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,.serif{font-family:'Marcellus',serif;font-weight:400}
+section{scroll-margin-top:88px}
+.wrap{max-width:1280px;margin:0 auto}
+.pad{padding-left:48px;padding-right:48px}
 
-h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--navy)}
+.kicker{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.kicker::before{content:"";width:56px;height:1px;background:var(--gold);flex-shrink:0}
+.kicker span{font-size:13px;letter-spacing:.38em;color:var(--gold);font-weight:600;text-transform:uppercase}
 
-.kicker{
-  display:inline-block;
-  font-size:12px;
-  font-weight:500;
-  letter-spacing:.32em;
-  text-transform:uppercase;
-  color:var(--gold);
+.btn-gold{
+  display:inline-block;padding:18px 40px;background:var(--gold);color:var(--gold-dark);
+  font-size:14px;font-weight:700;letter-spacing:.1em;transition:background .25s;text-transform:uppercase;
 }
-.section-head{max-width:680px;margin-bottom:64px}
-.section-head .kicker{margin-bottom:18px}
-.section-head h2{font-size:clamp(34px,4.2vw,52px);line-height:1.12;margin-bottom:16px}
-.section-head p{color:var(--concrete);font-size:17px;font-weight:300}
-
-/* ===== Buttons ===== */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  padding:16px 34px;
-  font-family:'Jost',sans-serif;font-size:13px;font-weight:500;
-  letter-spacing:.18em;text-transform:uppercase;
-  transition:all .25s ease;cursor:pointer;
+.btn-gold:hover{background:var(--gold-hover)}
+.btn-ghost{
+  display:inline-block;padding:17px 40px;border:1px solid rgba(237,235,228,.35);color:var(--ink);
+  font-size:14px;font-weight:600;letter-spacing:.1em;transition:border-color .25s,color .25s;text-transform:uppercase;
 }
-.btn-solid{background:var(--gold);color:var(--navy-deep)}
-.btn-solid:hover{background:var(--gold-soft)}
-.btn-outline{border:1px solid rgba(255,255,255,.55);color:var(--white)}
-.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
-.btn-navy-outline{border:1px solid var(--navy);color:var(--navy)}
-.btn-navy-outline:hover{background:var(--navy);color:var(--white)}
-
-/* ===== Topbar ===== */
-.topbar{
-  background:var(--navy-deep);
-  color:rgba(255,255,255,.65);
-  font-size:11px;letter-spacing:.22em;text-transform:uppercase;
-  text-align:center;padding:9px 16px;
-}
-.topbar span{color:var(--gold)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
 
 /* ===== Header ===== */
 header{
-  position:sticky;top:0;z-index:100;
-  background:rgba(15,27,61,.92);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line-light);
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding:18px clamp(20px,3vw,48px);
+  background:rgba(11,17,31,.82);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-gold);
 }
-.nav{
-  display:flex;align-items:center;justify-content:space-between;gap:28px;
-  height:78px;
+.brand{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.brand img{width:44px;height:44px;object-fit:contain}
+.brand-name{display:flex;flex-direction:column;line-height:1.1}
+.brand-name .top{font-family:'Marcellus',serif;font-size:19px;letter-spacing:.06em}
+.brand-name .sub{font-size:11px;letter-spacing:.42em;color:var(--gold);font-weight:600}
+nav{display:flex;align-items:center;gap:clamp(14px,2.2vw,36px);min-width:0}
+nav .nav-link{
+  color:var(--soft);font-size:13px;letter-spacing:.08em;font-weight:500;
+  white-space:nowrap;transition:color .2s;
 }
-.nav .btn{white-space:nowrap}
-.brand{display:flex;align-items:center;gap:14px}
-.brand img{height:44px;width:44px;object-fit:contain}
-.brand-name{display:flex;flex-direction:column;line-height:1.15}
-.brand-name b{
-  font-family:'Cormorant Garamond',serif;font-weight:600;
-  font-size:20px;color:var(--white);letter-spacing:.04em;
+nav .nav-link:hover{color:var(--gold)}
+nav .nav-cta{
+  padding:12px clamp(14px,1.8vw,26px);background:var(--gold);color:var(--gold-dark);
+  font-size:13px;font-weight:700;letter-spacing:.1em;white-space:nowrap;transition:background .25s;
 }
-.brand-name small{
-  font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;
-  color:var(--gold);font-weight:500;
+nav .nav-cta:hover{background:var(--gold-hover)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.nav-toggle span{width:24px;height:1.5px;background:var(--ink)}
+.mobile-menu{
+  display:none;position:fixed;top:80px;left:0;right:0;z-index:49;
+  background:var(--footer-bg);border-bottom:1px solid var(--line-gold);
+  flex-direction:column;padding:10px 0;
 }
-.menu{display:flex;align-items:center;gap:36px;list-style:none}
-.menu-cta{display:none}
-.menu a{
-  font-size:12.5px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
-  color:rgba(255,255,255,.78);transition:color .2s;
+.mobile-menu.open{display:flex}
+.mobile-menu a{
+  padding:15px 28px;font-size:14px;letter-spacing:.1em;color:var(--soft);font-weight:500;
 }
-.menu a:hover{color:var(--gold)}
-.nav .btn{padding:12px 24px;font-size:11.5px}
-.nav-toggle{display:none}
+.mobile-menu a.menu-cta{color:var(--gold);font-weight:700;border-top:1px solid var(--line)}
 
 /* ===== Hero ===== */
 .hero{
   position:relative;
-  min-height:92vh;
-  min-height:92svh;
-  display:flex;align-items:flex-end;
-  background:url('img/reforma-base-core-gt3-policia-civil-goiania.jpg') center 38%/cover no-repeat;
+  min-height:100vh;
+  min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:160px 48px 64px;
 }
-.hero::before{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(10,19,48,.28) 0%,rgba(10,19,48,.45) 42%,rgba(10,19,48,.88) 78%,rgba(10,19,48,.97) 100%);
+.hero-bg img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center 40%;
 }
-.hero-content{
-  position:relative;z-index:2;
-  width:100%;
-  padding-top:140px;
-  padding-bottom:72px;
+.hero-shade,.hero-fade{position:absolute;inset:0}
+.hero-shade{background:linear-gradient(100deg,rgba(11,17,31,.96) 30%,rgba(11,17,31,.72) 60%,rgba(11,17,31,.45) 100%)}
+.hero-fade{background:linear-gradient(to top,#0B111F 0%,rgba(11,17,31,0) 35%)}
+.hero-content{position:relative;max-width:1280px;margin:0 auto;width:100%}
+.hero .kicker{margin-bottom:28px}
+.hero h1{font-size:clamp(44px,5.4vw,78px);line-height:1.08;margin-bottom:28px;max-width:820px}
+.hero p{font-size:19px;line-height:1.7;color:rgba(237,235,228,.78);max-width:620px;margin-bottom:44px}
+.hero-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.hero-stats{
+  display:flex;gap:64px;margin-top:88px;padding-top:36px;
+  border-top:1px solid rgba(237,235,228,.16);max-width:720px;flex-wrap:wrap;
 }
-.hero .kicker{margin-bottom:22px}
-.hero h1{
-  color:var(--white);
-  font-size:clamp(44px,6.4vw,84px);
-  line-height:1.05;
-  font-weight:500;
-  max-width:820px;
-  margin-bottom:24px;
-}
-.hero p{
-  color:rgba(255,255,255,.82);
-  font-size:clamp(16px,1.6vw,19px);
-  font-weight:300;
-  max-width:640px;
-  margin-bottom:40px;
-}
-.hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:48px}
-.hero-creds{
-  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
-  padding-top:28px;
-  border-top:1px solid var(--line-light);
-  font-size:12px;letter-spacing:.24em;text-transform:uppercase;
-  color:rgba(255,255,255,.66);
-}
-.hero-creds i{width:4px;height:4px;background:var(--gold);border-radius:50%;font-style:normal}
+.hero-stats div{display:flex;flex-direction:column;gap:6px}
+.hero-stats b{font-family:'Marcellus',serif;font-weight:400;font-size:44px;color:var(--gold)}
+.hero-stats small{font-size:13px;letter-spacing:.14em;color:rgba(237,235,228,.6)}
 
-/* ===== Credentials bar ===== */
-.creds{background:var(--navy);color:var(--white);padding:0}
-.creds-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);
+/* ===== Órgãos ===== */
+.orgaos{border-top:1px solid var(--line-gold);border-bottom:1px solid var(--line-gold);background:var(--panel)}
+.orgaos-grid{
+  max-width:1280px;margin:0 auto;padding:30px 48px;
+  display:grid;grid-template-columns:auto 1fr 1fr 1fr 1fr;gap:32px;align-items:center;
 }
-.cred{
-  padding:44px 32px;
-  border-left:1px solid var(--line-light);
-}
-.cred:first-child{border-left:none}
-.cred h3{
-  color:var(--white);font-family:'Jost',sans-serif;
-  font-size:13.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
-  margin-bottom:10px;
-}
-.cred p{font-size:14px;font-weight:300;color:rgba(255,255,255,.6);line-height:1.55}
-.cred .num{
-  display:block;font-family:'Cormorant Garamond',serif;
-  font-size:15px;color:var(--gold);letter-spacing:.2em;margin-bottom:14px;
-}
+.orgaos-label{font-size:12px;letter-spacing:.3em;color:var(--faint);font-weight:600}
+.orgao{display:flex;flex-direction:column;gap:2px}
+.orgao b{font-family:'Marcellus',serif;font-weight:400;font-size:20px;color:var(--ink)}
+.orgao small{font-size:12px;color:var(--faint);letter-spacing:.06em}
 
-/* ===== Sobre ===== */
-.sobre{padding:130px 0}
-.sobre-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
-.sobre-text .kicker{margin-bottom:18px;display:block}
-.sobre-text h2{font-size:clamp(34px,4vw,50px);line-height:1.12;margin-bottom:26px}
-.sobre-text p{color:var(--concrete);font-size:16.5px;font-weight:300;margin-bottom:18px}
-.sobre-orgaos{
-  margin-top:36px;padding-top:32px;border-top:1px solid var(--line);
-  display:flex;flex-wrap:wrap;gap:12px 28px;
-  font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);font-weight:500;
+/* ===== Section head ===== */
+.section-head{
+  display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:72px;
 }
-.sobre-orgaos span{display:flex;align-items:center;gap:10px}
-.sobre-orgaos span::before{content:"";width:18px;height:1px;background:var(--gold)}
-.sobre-photo{position:relative}
-.sobre-photo img{width:100%;height:560px;object-fit:cover}
-.sobre-photo::after{
-  content:"";position:absolute;top:24px;left:24px;right:-24px;bottom:-24px;
-  border:1px solid var(--gold);z-index:-1;
-}
+.section-head h2{font-size:clamp(32px,3.4vw,48px);line-height:1.15;max-width:560px}
+.section-head p{font-size:16px;line-height:1.7;color:var(--muted);max-width:420px}
 
 /* ===== Serviços ===== */
-.servicos{padding:130px 0;background:var(--white)}
-.servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.servico{background:var(--white);padding:56px 42px}
-.servico .idx{
-  font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;
-  color:var(--gold);display:block;margin-bottom:26px;letter-spacing:.1em;
+.servicos{padding:120px 48px}
+.servicos-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px}
+.servico{
+  background:var(--card);border:1px solid rgba(237,235,228,.08);
+  padding:44px 36px;display:flex;flex-direction:column;gap:18px;
+  transition:border-color .3s;
 }
-.servico h3{font-size:29px;line-height:1.2;margin-bottom:16px}
-.servico p{color:var(--concrete);font-size:15.5px;font-weight:300}
+.servico:hover{border-color:rgba(227,166,59,.45)}
+.servico .idx{font-family:'Marcellus',serif;font-size:15px;color:var(--gold);letter-spacing:.2em}
+.servico h3{font-size:26px}
+.servico p{font-size:15px;line-height:1.75;color:var(--muted)}
+
+/* ===== Obras ===== */
+.obras{padding:0 48px 120px}
+.obras .section-head{margin-bottom:64px}
+.obras .section-head span{font-size:15px;color:rgba(237,235,228,.55)}
+.obra-destaque{
+  position:relative;display:block;height:520px;overflow:hidden;
+  margin-bottom:28px;border:1px solid var(--line);
+}
+.obra-destaque > img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease;
+}
+.obra-destaque:hover > img{transform:scale(1.03)}
+.obra-destaque .shade{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(11,17,31,.95) 0%,rgba(11,17,31,.25) 55%,rgba(11,17,31,.1) 100%);
+}
+.obra-destaque .info{
+  position:absolute;left:0;right:0;bottom:0;padding:44px 48px;
+  display:flex;justify-content:space-between;align-items:flex-end;gap:32px;
+}
+.obra-destaque .info-text{display:flex;flex-direction:column;gap:10px}
+.obra-destaque .tag{font-size:12px;letter-spacing:.3em;color:var(--gold);font-weight:700}
+.obra-destaque .titulo{font-family:'Marcellus',serif;font-size:34px;line-height:1.2}
+.obra-destaque .desc{font-size:15px;line-height:1.65;color:var(--soft);max-width:640px}
+.obra-destaque .prazo{display:flex;flex-direction:column;gap:4px;align-items:flex-end;flex-shrink:0}
+.obra-destaque .prazo b{font-family:'Marcellus',serif;font-weight:400;font-size:22px;color:var(--gold)}
+.obra-destaque .prazo small{font-size:12px;letter-spacing:.14em;color:rgba(237,235,228,.55)}
+.obras-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px}
+.obra-card{position:relative;height:380px;overflow:hidden;border:1px solid var(--line)}
+.obra-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.obra-card .shade{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(11,17,31,.94) 0%,rgba(11,17,31,.15) 50%,rgba(11,17,31,.05) 100%);
+}
+.obra-card .info{
+  position:absolute;left:0;right:0;bottom:0;padding:26px 28px;
+  display:flex;flex-direction:column;gap:8px;
+}
+.obra-card .orgao-tag{font-size:11px;letter-spacing:.26em;color:var(--gold);font-weight:700}
+.obra-card .titulo{font-family:'Marcellus',serif;font-size:21px;line-height:1.25}
+.obra-card .local{font-size:13px;color:rgba(237,235,228,.6)}
 
 /* ===== Programas ===== */
-.programas{background:var(--navy);padding:130px 0;color:var(--white)}
-.programas .section-head h2{color:var(--white)}
-.programas .section-head p{color:rgba(255,255,255,.62)}
-.prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-light);border:1px solid var(--line-light)}
-.prog{background:var(--navy);padding:56px 48px}
-.prog .tag{
-  display:inline-block;font-size:11px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;
-  color:var(--gold);border:1px solid rgba(201,162,91,.45);
-  padding:7px 16px;margin-bottom:28px;
+.programas{
+  background:var(--panel);
+  border-top:1px solid var(--line-gold);border-bottom:1px solid var(--line-gold);
+  padding:120px 48px;
 }
-.prog h3{color:var(--white);font-size:34px;margin-bottom:14px}
-.prog p{color:rgba(255,255,255,.66);font-size:15.5px;font-weight:300}
-.prog-note{
-  margin-top:44px;padding-top:30px;border-top:1px solid var(--line-light);
-  display:flex;align-items:baseline;gap:14px;
-  color:rgba(255,255,255,.6);font-size:14.5px;font-weight:300;
+.programas h2{font-size:clamp(32px,3.4vw,48px);line-height:1.15;margin-bottom:64px;max-width:720px}
+.prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.prog{
+  border:1px solid rgba(227,166,59,.3);padding:48px 44px;
+  display:flex;flex-direction:column;gap:16px;background:rgba(227,166,59,.05);
 }
-.prog-note b{
-  color:var(--gold);font-weight:500;font-size:11.5px;
-  letter-spacing:.24em;text-transform:uppercase;white-space:nowrap;
-}
+.prog .nome{font-family:'Marcellus',serif;font-size:30px;color:var(--gold);letter-spacing:.08em}
+.prog .modo{font-size:13px;letter-spacing:.22em;color:rgba(237,235,228,.55);font-weight:600}
+.prog p{font-size:16px;line-height:1.75;color:rgba(237,235,228,.7)}
+.prog-note{font-size:14px;color:var(--faint);margin-top:36px;letter-spacing:.04em}
 
-/* ===== Portfólio ===== */
-.obras{padding:130px 0}
-.obra-destaque{
-  display:grid;grid-template-columns:1.15fr .85fr;
-  background:var(--white);border:1px solid var(--line);
-  margin-bottom:72px;
+/* ===== Sobre ===== */
+.sobre{padding:120px 48px}
+.sobre-grid{
+  max-width:1280px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
 }
-.obra-destaque img{width:100%;height:100%;min-height:480px;object-fit:cover}
-.obra-info{padding:56px 52px;display:flex;flex-direction:column;justify-content:center}
-.obra-info .tag{
-  align-self:flex-start;
-  font-size:10.5px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;
-  color:var(--gold);border:1px solid rgba(201,162,91,.5);
-  padding:6px 14px;margin-bottom:24px;
+.sobre-photo{position:relative}
+.sobre-photo img{width:100%;height:560px;object-fit:cover;border:1px solid var(--line)}
+.sobre-selo{
+  position:absolute;bottom:-1px;left:-1px;background:var(--gold);color:var(--gold-dark);
+  padding:22px 30px;display:flex;flex-direction:column;gap:2px;
 }
-.obra-info h3{font-size:36px;line-height:1.15;margin-bottom:8px}
-.obra-info .orgao{
-  font-size:12px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--concrete);margin-bottom:24px;
-}
-.obra-info p{color:var(--concrete);font-size:15px;font-weight:300;margin-bottom:28px}
-.obra-meta{
-  display:grid;grid-template-columns:repeat(4,auto);gap:8px 32px;
-  padding-top:26px;border-top:1px solid var(--line);
-}
-.obra-meta div small{
-  display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--concrete);margin-bottom:4px;
-}
-.obra-meta div b{
-  font-family:'Cormorant Garamond',serif;font-weight:600;
-  font-size:19px;color:var(--navy);
-}
-.galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.gal-item{position:relative;overflow:hidden;background:var(--navy)}
-.gal-item img{width:100%;height:340px;object-fit:cover;transition:transform .5s ease,opacity .5s ease}
-.gal-item:hover img{transform:scale(1.04);opacity:.82}
-.gal-cap{
-  position:absolute;left:0;right:0;bottom:0;
-  padding:44px 24px 20px;
-  background:linear-gradient(180deg,transparent,rgba(10,19,48,.9));
-  color:var(--white);
-}
-.gal-cap b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:20px;line-height:1.25}
-.gal-cap small{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft)}
-.galeria-note{
-  margin-top:36px;text-align:center;
-  font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--concrete);
-}
+.sobre-selo b{font-family:'Marcellus',serif;font-weight:400;font-size:26px}
+.sobre-selo small{font-size:12px;letter-spacing:.16em;font-weight:700}
+.sobre-text h2{font-size:clamp(32px,3.4vw,48px);line-height:1.15;margin-bottom:28px}
+.sobre-text p{font-size:17px;line-height:1.8;color:var(--soft);margin-bottom:20px}
+.sobre-text p:last-of-type{margin-bottom:40px}
+.sobre-list{display:flex;flex-direction:column;gap:18px}
+.sobre-list div{display:flex;align-items:center;gap:16px}
+.sobre-list i{width:8px;height:8px;background:var(--gold);flex-shrink:0}
+.sobre-list span{font-size:16px;color:rgba(237,235,228,.85)}
 
-/* ===== Números ===== */
-.numeros{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0}
-.num-grid{display:grid;grid-template-columns:repeat(3,1fr)}
-.num{
-  text-align:center;padding:0 32px;
-  border-left:1px solid var(--line);
+/* ===== CTA ===== */
+.cta{position:relative;padding:140px 48px;overflow:hidden}
+.cta > img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center 30%;
 }
-.num:first-child{border-left:none}
-.num b{
-  display:block;font-family:'Cormorant Garamond',serif;font-weight:500;
-  font-size:clamp(52px,6vw,76px);line-height:1;color:var(--navy);margin-bottom:14px;
+.cta .shade{position:absolute;inset:0;background:rgba(11,17,31,.88)}
+.cta-content{
+  position:relative;max-width:900px;margin:0 auto;text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:28px;
 }
-.num small{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--concrete)}
-
-/* ===== CTA final ===== */
-.cta{
-  position:relative;
-  background:url('img/pintura-muro-policia-militar-goias.jpg') center 30%/cover no-repeat;
-  padding:160px 0;
-}
-.cta::before{content:"";position:absolute;inset:0;background:rgba(10,19,48,.92)}
-.cta .wrap{position:relative;z-index:2;text-align:center;max-width:820px}
-.cta .kicker{margin-bottom:20px;display:inline-block}
-.cta h2{color:var(--white);font-size:clamp(36px,4.6vw,58px);line-height:1.12;margin-bottom:20px}
-.cta p{color:rgba(255,255,255,.72);font-size:17px;font-weight:300;max-width:600px;margin:0 auto 44px}
-.cta-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
-.cta-resposta{
-  margin-top:40px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
-  color:rgba(255,255,255,.55);
-}
-.cta-resposta span{color:var(--gold)}
+.cta-content .kicker-plain{font-size:13px;letter-spacing:.38em;color:var(--gold);font-weight:600}
+.cta-content h2{font-size:clamp(34px,4vw,56px);line-height:1.15}
+.cta-content p{font-size:18px;line-height:1.7;color:rgba(237,235,228,.75);max-width:640px}
+.cta-actions{display:flex;gap:18px;margin-top:12px;flex-wrap:wrap;justify-content:center}
 
 /* ===== Footer ===== */
-footer{background:var(--navy-deep);color:rgba(255,255,255,.65);padding:88px 0 0}
+footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:var(--footer-bg)}
 .foot-grid{
-  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:64px;
-  padding-bottom:64px;border-bottom:1px solid var(--line-light);
+  max-width:1280px;margin:0 auto 64px;
+  display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:64px;
 }
-.foot-brand{display:flex;align-items:flex-start;gap:16px}
-.foot-brand img{height:52px;width:52px;object-fit:contain}
-.foot-brand p{font-size:14.5px;font-weight:300;margin-top:12px;max-width:340px}
-.foot-brand b{
-  font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;
-  color:var(--white);display:block;letter-spacing:.03em;
-}
-.foot-brand small{
-  font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:500;
-}
-.foot-col h4{
-  font-family:'Jost',sans-serif;color:var(--white);
-  font-size:12px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;
-  margin-bottom:24px;
-}
-.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:12px}
-.foot-col a{font-size:14.5px;font-weight:300;transition:color .2s}
+.foot-brand{display:flex;flex-direction:column;gap:22px}
+.foot-brand .brand img{width:48px;height:48px}
+.foot-brand p{font-size:15px;line-height:1.75;color:rgba(237,235,228,.55);max-width:420px}
+.foot-brand .insta{font-size:14px;color:rgba(237,235,228,.6);letter-spacing:.04em;transition:color .2s}
+.foot-brand .insta:hover{color:var(--gold)}
+.foot-col{display:flex;flex-direction:column;gap:16px}
+.foot-col .head{font-size:12px;letter-spacing:.3em;color:var(--gold);font-weight:700}
+.foot-col a{font-size:15px;color:rgba(237,235,228,.65);transition:color .2s}
 .foot-col a:hover{color:var(--gold)}
-.foot-col li{font-size:14.5px;font-weight:300}
 .foot-bottom{
-  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
-  padding:28px 0;
-  font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);
+  max-width:1280px;margin:0 auto;
+  border-top:1px solid var(--line);padding-top:28px;
+  display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
 }
-.selo-previa{
-  border:1px solid rgba(255,255,255,.22);
-  padding:5px 14px;font-size:10px;letter-spacing:.24em;
-}
+.foot-bottom span{font-size:13px;color:rgba(237,235,228,.45)}
 
 /* ===== WhatsApp float ===== */
 .wa-float{
-  position:fixed;right:26px;bottom:26px;z-index:200;
-  width:58px;height:58px;border-radius:50%;
-  background:#25D366;display:flex;align-items:center;justify-content:center;
-  box-shadow:0 8px 28px rgba(10,19,48,.35);
-  transition:transform .25s ease;
+  position:fixed;right:28px;bottom:28px;z-index:60;
+  width:60px;height:60px;border-radius:50%;
+  background:var(--gold);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.45);
+  transition:background .25s,transform .25s;
 }
-.wa-float:hover{transform:scale(1.08)}
-.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float:hover{background:var(--gold-hover);transform:scale(1.06)}
 
 /* ===== Responsive ===== */
 @media (max-width:1020px){
-  .creds-grid{grid-template-columns:1fr 1fr}
-  .cred{border-top:1px solid var(--line-light)}
-  .cred:nth-child(1),.cred:nth-child(2){border-top:none}
-  .cred:nth-child(3){border-left:none}
-  .sobre-grid{grid-template-columns:1fr;gap:56px}
-  .sobre-photo img{height:420px}
+  nav .nav-link,nav .nav-cta{display:none}
+  .nav-toggle{display:flex}
+  .orgaos-grid{grid-template-columns:1fr 1fr;gap:24px 32px}
+  .orgaos-grid .orgaos-label{grid-column:1/-1}
+  .section-head{flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:56px}
   .servicos-grid{grid-template-columns:1fr}
+  .obras-grid{grid-template-columns:1fr 1fr}
   .prog-grid{grid-template-columns:1fr}
-  .obra-destaque{grid-template-columns:1fr}
-  .obra-destaque img{min-height:320px;height:380px}
-  .galeria{grid-template-columns:1fr 1fr}
+  .sobre-grid{grid-template-columns:1fr;gap:56px}
+  .sobre-photo img{height:440px}
   .foot-grid{grid-template-columns:1fr;gap:44px}
-}
-@media (max-width:1020px){
-  .menu{display:none}
-  .nav .btn{display:none}
-  .nav-toggle{
-    display:flex;flex-direction:column;gap:5px;
-    background:none;border:none;cursor:pointer;padding:8px;
-  }
-  .nav-toggle span{width:24px;height:1.5px;background:var(--white)}
-  .menu.open{
-    display:flex;flex-direction:column;gap:0;
-    position:absolute;top:78px;left:0;right:0;
-    background:var(--navy-deep);border-bottom:1px solid var(--line-light);
-    padding:12px 0;
-  }
-  .menu.open li{width:100%}
-  .menu.open a{display:block;padding:14px 32px}
-  .menu.open .menu-cta{display:block;margin-top:8px;border-top:1px solid var(--line-light)}
-  .menu.open .menu-cta a{color:var(--gold);font-weight:500}
+  .obra-destaque .info{flex-direction:column;align-items:flex-start;gap:20px}
+  .obra-destaque .prazo{align-items:flex-start}
 }
 @media (max-width:640px){
-  .wrap{padding:0 22px}
-  .hero{
-    min-height:88vh;
-    min-height:88svh;
-    background-image:url('img/reforma-base-core-gt3-policia-civil-goiania-mobile.jpg');
-  }
-  .hero-content{padding:120px 0 56px}
-  .creds-grid{grid-template-columns:1fr}
-  .cred{border-left:none;border-top:1px solid var(--line-light)}
-  .cred:first-child{border-top:none}
-  .sobre,.servicos,.programas,.obras{padding:88px 0}
-  .servico{padding:44px 30px}
-  .prog{padding:44px 30px}
-  .obra-info{padding:40px 28px}
-  .obra-meta{grid-template-columns:1fr 1fr;gap:20px 24px}
-  .galeria{grid-template-columns:1fr}
-  .gal-item img{height:300px}
-  .num-grid{grid-template-columns:1fr;gap:48px}
-  .num{border-left:none}
-  .cta{padding:110px 0}
-  .sobre-photo::after{display:none}
+  .pad,.servicos,.programas,.sobre,.cta{padding-left:22px;padding-right:22px}
+  .obras{padding-left:22px;padding-right:22px}
+  .hero{padding:140px 22px 56px;min-height:100vh;min-height:100svh}
+  .hero p{font-size:17px}
+  .hero-stats{gap:28px 40px;margin-top:64px}
+  .hero-stats b{font-size:36px}
+  .orgaos-grid{padding:26px 22px}
+  .servicos,.programas,.sobre{padding-top:88px;padding-bottom:88px}
+  .obras{padding-bottom:88px}
+  .cta{padding-top:100px;padding-bottom:100px}
+  .obra-destaque{height:auto;min-height:480px;display:flex;align-items:flex-end}
+  .obra-destaque .info{position:relative;padding:200px 24px 28px}
+  .obra-destaque .titulo{font-size:27px}
+  .obras-grid{grid-template-columns:1fr}
+  .obra-card{height:320px}
+  .prog{padding:38px 28px}
+  .sobre-photo img{height:380px}
+  .sobre-selo{padding:16px 22px}
+  .sobre-selo b{font-size:21px}
+  footer{padding:64px 22px 32px}
+  .btn-gold,.btn-ghost{width:100%;text-align:center}
+  .hero-actions,.cta-actions{width:100%}
+  .hero-actions a,.cta-actions a{flex:1 1 100%}
 }
 </style>
 </head>
 <body>
 
-<!-- Barra superior -->
-<div class="topbar">Goiás <span>·</span> CREA-GO <span>·</span> Obras Públicas</div>
-
 <!-- Cabeçalho -->
 <header>
-  <div class="wrap nav">
-    <a href="#inicio" class="brand">
-      <img src="img/logo-construtora-premium-192.png" alt="Logo da Construtora Premium" width="192" height="192">
-      <span class="brand-name">
-        <b>Construtora Premium</b>
-        <small>Obras Públicas · Goiás</small>
-      </span>
-    </a>
-    <ul class="menu" id="menu">
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#quem-somos">Quem Somos</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#obras">Obras</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li class="menu-cta"><a href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Orçamento no WhatsApp →</a></li>
-    </ul>
-    <a class="btn btn-solid" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Orçamento no WhatsApp</a>
+  <a href="#inicio" class="brand">
+    <img src="img/logo-construtora-premium-192.png" alt="Logo da Construtora Premium" width="192" height="192">
+    <span class="brand-name">
+      <span class="top">CONSTRUTORA</span>
+      <span class="sub">PREMIUM</span>
+    </span>
+  </a>
+  <nav>
+    <a class="nav-link" href="#sobre">QUEM SOMOS</a>
+    <a class="nav-link" href="#servicos">SERVIÇOS</a>
+    <a class="nav-link" href="#obras">OBRAS</a>
+    <a class="nav-link" href="#contato">CONTATO</a>
+    <a class="nav-cta" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">SOLICITAR ORÇAMENTO</a>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
       <span></span><span></span><span></span>
     </button>
-  </div>
+  </nav>
 </header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre">QUEM SOMOS</a>
+  <a href="#servicos">SERVIÇOS</a>
+  <a href="#obras">OBRAS</a>
+  <a href="#contato">CONTATO</a>
+  <a class="menu-cta" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">SOLICITAR ORÇAMENTO →</a>
+</div>
 
 <!-- HERO -->
 <section class="hero" id="inicio">
-  <div class="wrap hero-content">
-    <span class="kicker">Construtora Premium · Obras Públicas em Goiás</span>
-    <h1>Sua obra pública entregue como o órgão exige.</h1>
-    <p>Projetos, construção e reforma para PM-GO, PC-GO, MPGO e SEDUC — com o rigor que colégios militares, delegacias e batalhões exigem em Goiás.</p>
+  <picture class="hero-bg">
+    <source media="(max-width:640px)" srcset="img/reforma-base-core-gt3-policia-civil-goiania-mobile.jpg">
+    <img src="img/reforma-base-core-gt3-policia-civil-goiania.jpg" alt="Obra pública executada pela Construtora Premium — reforma da Base CORE/GT3 da Polícia Civil em Goiânia" width="1600" height="900" fetchpriority="high">
+  </picture>
+  <div class="hero-shade"></div>
+  <div class="hero-fade"></div>
+  <div class="hero-content">
+    <div class="kicker"><span>Obras Públicas em Goiás</span></div>
+    <h1>Engenharia pública com padrão de excelência.</h1>
+    <p>Projetos, construção e reforma para PM-GO, PC-GO, MPGO e SEDUC. Delegacias, batalhões e colégios militares entregues com o rigor que a fiscalização exige.</p>
     <div class="hero-actions">
-      <a class="btn btn-solid" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Orçamento no WhatsApp</a>
-      <a class="btn btn-outline" href="#obras">Ver obras entregues</a>
+      <a class="btn-gold" href="#obras">VER PORTFÓLIO</a>
+      <a class="btn-ghost" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">FALAR COM ENGENHARIA</a>
     </div>
-    <div class="hero-creds">
-      <span>CREA-GO</span><i></i>
-      <span>65+ obras entregues</span><i></i>
-      <span>50.000 m² construídos e reformados</span>
-    </div>
-  </div>
-</section>
-
-<!-- Barra de credenciais -->
-<section class="creds">
-  <div class="creds-grid">
-    <div class="cred">
-      <span class="num">I</span>
-      <h3>Órgãos atendidos</h3>
-      <p>PM-GO, PC-GO, MPGO e SEDUC — experiência direta com as exigências de cada órgão.</p>
-    </div>
-    <div class="cred">
-      <span class="num">II</span>
-      <h3>Documentação completa</h3>
-      <p>Habite-se, ART e termo de recebimento sem pendências para a fiscalização.</p>
-    </div>
-    <div class="cred">
-      <span class="num">III</span>
-      <h3>Medição semanal</h3>
-      <p>Plano de prazo formal, medições documentadas e relatório de obra para o gestor.</p>
-    </div>
-    <div class="cred">
-      <span class="num">IV</span>
-      <h3>Resposta em 1 dia útil</h3>
-      <p>Retorno inicial em até 1 dia útil — para emergenciais, no mesmo dia.</p>
+    <div class="hero-stats">
+      <div><b>65+</b><small>OBRAS ENTREGUES</small></div>
+      <div><b>50.000 m²</b><small>DE ÁREA CONSTRUÍDA</small></div>
+      <div><b>4</b><small>ÓRGÃOS ATENDIDOS</small></div>
     </div>
   </div>
 </section>
 
-<!-- Quem somos -->
-<section class="sobre" id="quem-somos">
-  <div class="wrap sobre-grid">
-    <div class="sobre-text">
-      <span class="kicker">Quem Somos</span>
-      <h2>Engenharia pública com rigor de fiscalização.</h2>
-      <p>A Construtora Premium é uma construtora goiana especializada em obras públicas: colégios militares, delegacias, batalhões e escolas do estado de Goiás. Atuamos do projeto à entrega, com equipe própria e registro no CREA-GO.</p>
-      <p>Conhecemos o dia a dia dos órgãos que atendemos — os prazos de medição, os padrões de acabamento, a documentação exigida pela fiscalização. É por isso que cada obra é conduzida com cronograma formal, medições semanais documentadas e entrega sem pendências.</p>
-      <p>Com sede em Goiânia, atendemos todo o estado de Goiás, em licitações, convênios, programas estaduais e contratações emergenciais.</p>
-      <div class="sobre-orgaos">
-        <span>PM-GO</span>
-        <span>PC-GO</span>
-        <span>MPGO</span>
-        <span>SEDUC</span>
-      </div>
-    </div>
-    <div class="sobre-photo">
-      <img src="img/equipe-construtora-premium-policia-militar-goias.jpg" alt="Equipe da Construtora Premium em reunião com oficiais da Polícia Militar de Goiás" width="1200" height="1600" loading="lazy" decoding="async">
-    </div>
+<!-- Órgãos -->
+<section class="orgaos" id="orgaos">
+  <div class="orgaos-grid">
+    <span class="orgaos-label">ATENDEMOS</span>
+    <div class="orgao"><b>PM-GO</b><small>Polícia Militar</small></div>
+    <div class="orgao"><b>PC-GO</b><small>Polícia Civil</small></div>
+    <div class="orgao"><b>MPGO</b><small>Ministério Público</small></div>
+    <div class="orgao"><b>SEDUC</b><small>Secretaria de Educação</small></div>
   </div>
 </section>
 
 <!-- Serviços -->
 <section class="servicos" id="servicos">
   <div class="wrap">
+    <div class="kicker"><span>Nossos Serviços</span></div>
     <div class="section-head">
-      <span class="kicker">Serviços</span>
-      <h2>Do projeto à entrega, em três frentes.</h2>
-      <p>Atendemos o ciclo completo da obra pública — da documentação técnica da licitação ao termo de recebimento.</p>
+      <h2>Do projeto à entrega, tudo dentro da norma.</h2>
+      <p>Atuação especializada em obras de segurança pública e ensino militar, com documentação completa para licitações e órgãos fiscalizadores.</p>
     </div>
     <div class="servicos-grid">
       <div class="servico">
         <span class="idx">01</span>
         <h3>Elaboração de projetos</h3>
-        <p>Projetos arquitetônicos, estruturais e complementares com toda a documentação técnica exigida em licitações e órgãos fiscalizadores.</p>
+        <p>Projetos arquitetônicos, estruturais e complementares com toda a documentação técnica exigida em licitações, do memorial descritivo à ART.</p>
       </div>
       <div class="servico">
         <span class="idx">02</span>
         <h3>Construção</h3>
-        <p>Execução de obras novas para colégios militares, delegacias e batalhões, com gestão de canteiro e cumprimento rigoroso de prazos.</p>
+        <p>Execução de obras novas para colégios militares, delegacias e batalhões, com gestão de canteiro, medição semanal e cumprimento rigoroso de prazos.</p>
       </div>
       <div class="servico">
         <span class="idx">03</span>
@@ -576,190 +458,195 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.65);padding:88px 0 0}
   </div>
 </section>
 
-<!-- Programas do Governo -->
-<section class="programas" id="programas">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Programas do Governo de Goiás</span>
-      <h2>Domínio dos programas que movem a obra pública no estado.</h2>
-      <p>Conhecemos os fluxos, prazos e exigências de cada modalidade de contratação do Governo de Goiás.</p>
-    </div>
-    <div class="prog-grid">
-      <div class="prog">
-        <span class="tag">SEDUC</span>
-        <h3>REFORMAR</h3>
-        <p>Programa estadual da SEDUC para manutenção e reformas em escolas públicas. Executamos dentro do padrão e do cronograma exigidos pelo programa, com documentação completa para prestação de contas.</p>
-      </div>
-      <div class="prog">
-        <span class="tag">Prazo Reduzido</span>
-        <h3>EMERGENCIAL</h3>
-        <p>Contratação para intervenções urgentes em estruturas públicas, com prazo reduzido. Mobilização rápida de equipe e canteiro — retorno no mesmo dia para demandas emergenciais.</p>
-      </div>
-    </div>
-    <div class="prog-note">
-      <b>Também atendemos</b>
-      <span>Licitações tradicionais, convênios e obras com recursos próprios do órgão — em todo o estado de Goiás.</span>
-    </div>
-  </div>
-</section>
-
-<!-- Portfólio -->
+<!-- Obras -->
 <section class="obras" id="obras">
   <div class="wrap">
+    <div class="kicker"><span>Portfólio</span></div>
     <div class="section-head">
-      <span class="kicker">Obras</span>
-      <h2>Obras entregues para quem mais exige.</h2>
-      <p>Uma seleção de obras executadas para os órgãos públicos de Goiás.</p>
+      <h2>Obras em destaque</h2>
+      <span>Seleção de projetos entregues para instituições públicas de Goiás.</span>
     </div>
 
-    <!-- Obra em destaque -->
-    <div class="obra-destaque">
-      <img src="img/reforma-base-core-gt3-policia-civil-goiania.jpg" alt="Reforma da Base CORE/GT3 da Polícia Civil e Ministério Público em Goiânia, Goiás — muro da base de operações especiais" width="1600" height="900" loading="lazy" decoding="async">
-      <div class="obra-info">
-        <span class="tag">Obra em destaque</span>
-        <h3>Reforma Base CORE/GT3</h3>
-        <div class="orgao">Polícia Civil · Ministério Público — Goiânia/GO</div>
-        <p>Reforma completa da base do CORE/GT3: ampliação de vestiários, criação de espaço gourmet, academia climatizada, novos banheiros e reforma dos existentes, piso epóxi em toda a base, pintura completa e novas redes elétrica e hidrossanitária.</p>
-        <div class="obra-meta">
-          <div><small>Ano</small><b>2026</b></div>
-          <div><small>Valor</small><b>Até R$ 500k</b></div>
-          <div><small>Prazo</small><b>8 meses</b></div>
-          <div><small>Local</small><b>Goiânia/GO</b></div>
+    <a class="obra-destaque" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">
+      <img src="img/reforma-base-core-gt3-policia-civil-goiania.jpg" alt="Reforma da Base CORE/GT3 da Polícia Civil em Goiânia, Goiás — muro da base de operações especiais" width="1600" height="900" loading="lazy" decoding="async">
+      <div class="shade"></div>
+      <div class="info">
+        <div class="info-text">
+          <span class="tag">DESTAQUE · POLÍCIA CIVIL · GOIÂNIA/GO</span>
+          <span class="titulo">Reforma da Base CORE/GT3</span>
+          <span class="desc">Reforma completa da base de operações especiais: ampliação de vestiários, academia climatizada, piso epóxi em toda a extensão, novas redes elétrica e hidrossanitária.</span>
+        </div>
+        <div class="prazo">
+          <b>8 meses</b>
+          <small>PRAZO EXECUTADO</small>
+        </div>
+      </div>
+    </a>
+
+    <div class="obras-grid">
+      <div class="obra-card">
+        <img src="img/reforma-4-distrito-policial-aparecida-de-goiania.jpg" alt="Reforma de fachada do 4º Distrito Policial de Aparecida de Goiânia — Central de Flagrantes da Polícia Civil" width="1200" height="1600" loading="lazy" decoding="async">
+        <div class="shade"></div>
+        <div class="info">
+          <span class="orgao-tag">POLÍCIA CIVIL</span>
+          <span class="titulo">4º Distrito Policial e Central de Flagrantes</span>
+          <span class="local">Aparecida de Goiânia/GO</span>
+        </div>
+      </div>
+      <div class="obra-card">
+        <img src="img/pintura-brasao-delegacia-policia-civil-goiania.jpg" alt="Pintura artística do brasão da Polícia Civil na 17ª Delegacia de Polícia em Goiânia, Goiás" width="900" height="1600" loading="lazy" decoding="async">
+        <div class="shade"></div>
+        <div class="info">
+          <span class="orgao-tag">POLÍCIA CIVIL</span>
+          <span class="titulo">Revitalização da 17ª Delegacia de Polícia</span>
+          <span class="local">Goiânia/GO</span>
+        </div>
+      </div>
+      <div class="obra-card">
+        <img src="img/pintura-muro-policia-militar-goias.jpg" alt="Pintura de muro em unidade da Polícia Militar do Estado de Goiás com identidade visual do Governo de Goiás" width="720" height="1280" loading="lazy" decoding="async">
+        <div class="shade"></div>
+        <div class="info">
+          <span class="orgao-tag">POLÍCIA MILITAR</span>
+          <span class="titulo">Revitalização de fachada institucional</span>
+          <span class="local">Goiânia/GO</span>
+        </div>
+      </div>
+      <div class="obra-card">
+        <img src="img/instalacao-brasao-policia-civil-goiania.jpg" alt="Instalação de brasão da Polícia Civil e recuperação de cúpula em unidade de Goiânia, Goiás" width="960" height="1280" loading="lazy" decoding="async">
+        <div class="shade"></div>
+        <div class="info">
+          <span class="orgao-tag">POLÍCIA CIVIL</span>
+          <span class="titulo">Instalação de brasão e recuperação de cúpula</span>
+          <span class="local">Goiânia/GO</span>
+        </div>
+      </div>
+      <div class="obra-card">
+        <img src="img/reforma-escola-publica-seduc-goias.jpg" alt="Manutenção de colégio estadual da SEDUC em Goiás pelo Programa Reformar" width="900" height="1600" loading="lazy" decoding="async">
+        <div class="shade"></div>
+        <div class="info">
+          <span class="orgao-tag">SEDUC</span>
+          <span class="titulo">Manutenção de colégio estadual, Programa Reformar</span>
+          <span class="local">Goiânia/GO</span>
+        </div>
+      </div>
+      <div class="obra-card">
+        <img src="img/obra-17-distrito-policial-policia-civil-goiania.jpg" alt="Obra de adequações no 17º Distrito Policial da Polícia Civil em Goiânia, Goiás" width="900" height="1600" loading="lazy" decoding="async">
+        <div class="shade"></div>
+        <div class="info">
+          <span class="orgao-tag">POLÍCIA CIVIL</span>
+          <span class="titulo">Adequações no 17º Distrito Policial</span>
+          <span class="local">Goiânia/GO</span>
         </div>
       </div>
     </div>
-
-    <!-- Galeria -->
-    <div class="galeria">
-      <figure class="gal-item">
-        <img src="img/reforma-4-distrito-policial-aparecida-de-goiania.jpg" alt="Reforma de fachada do 4º Distrito Policial de Aparecida de Goiânia — Central de Flagrantes da Polícia Civil" width="1200" height="1600" loading="lazy" decoding="async">
-        <figcaption class="gal-cap">
-          <small>Polícia Civil</small>
-          <b>4º Distrito Policial — Aparecida de Goiânia</b>
-        </figcaption>
-      </figure>
-      <figure class="gal-item">
-        <img src="img/instalacao-brasao-policia-civil-goiania.jpg" alt="Instalação de brasão da Polícia Civil na fachada de unidade em Goiânia, Goiás" width="960" height="1280" loading="lazy" decoding="async">
-        <figcaption class="gal-cap">
-          <small>Polícia Civil</small>
-          <b>Revitalização de fachada institucional</b>
-        </figcaption>
-      </figure>
-      <figure class="gal-item">
-        <img src="img/pintura-brasao-delegacia-policia-civil-goiania.jpg" alt="Pintura artística do brasão da Polícia Civil na 17ª Delegacia de Polícia em Goiânia, Goiás" width="900" height="1600" loading="lazy" decoding="async">
-        <figcaption class="gal-cap">
-          <small>Polícia Civil</small>
-          <b>17ª Delegacia de Polícia — Goiânia</b>
-        </figcaption>
-      </figure>
-      <figure class="gal-item">
-        <img src="img/pintura-muro-policia-militar-goias.jpg" alt="Pintura de muro em unidade da Polícia Militar do Estado de Goiás com identidade visual do Governo de Goiás" width="720" height="1280" loading="lazy" decoding="async">
-        <figcaption class="gal-cap">
-          <small>PM-GO</small>
-          <b>Revitalização de unidade da Polícia Militar</b>
-        </figcaption>
-      </figure>
-      <figure class="gal-item">
-        <img src="img/reforma-escola-publica-seduc-goias.jpg" alt="Vistoria técnica em escola pública da SEDUC em Goiás para obra de reforma" width="900" height="1600" loading="lazy" decoding="async">
-        <figcaption class="gal-cap">
-          <small>SEDUC</small>
-          <b>Reforma de escola pública</b>
-        </figcaption>
-      </figure>
-      <figure class="gal-item">
-        <img src="img/obra-17-distrito-policial-policia-civil-goiania.jpg" alt="Obra de infraestrutura no 17º Distrito Policial da Polícia Civil em Goiânia, Goiás" width="900" height="1600" loading="lazy" decoding="async">
-        <figcaption class="gal-cap">
-          <small>Polícia Civil</small>
-          <b>17º Distrito Policial — infraestrutura</b>
-        </figcaption>
-      </figure>
-      <figure class="gal-item">
-        <img src="img/pavimentacao-obra-publica-goiania-construtora-premium.jpg" alt="Pavimentação com rolo compactador em obra pública da Polícia Civil em Goiânia, Goiás" width="900" height="1600" loading="lazy" decoding="async">
-        <figcaption class="gal-cap">
-          <small>Polícia Civil</small>
-          <b>Pavimentação em unidade policial</b>
-        </figcaption>
-      </figure>
-    </div>
-    <p class="galeria-note">Novas obras são adicionadas continuamente ao portfólio.</p>
   </div>
 </section>
 
-<!-- Números -->
-<section class="numeros">
-  <div class="wrap num-grid">
-    <div class="num"><b>65+</b><small>Obras entregues</small></div>
-    <div class="num"><b>50.000 m²</b><small>Construídos e reformados</small></div>
-    <div class="num"><b>CREA-GO</b><small>Registro profissional</small></div>
-  </div>
-</section>
-
-<!-- CTA final -->
-<section class="cta" id="contato">
+<!-- Programas -->
+<section class="programas" id="programas">
   <div class="wrap">
-    <span class="kicker">Fale com a Construtora Premium</span>
-    <h2>Vai abrir licitação ou tem reforma emergencial?</h2>
-    <p>Envie o edital, o escopo ou uma descrição da necessidade. Nossa equipe técnica analisa e retorna com os próximos passos.</p>
-    <div class="cta-actions">
-      <a class="btn btn-solid" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Orçamento no WhatsApp</a>
-      <a class="btn btn-outline" href="mailto:premiumservicosgo@gmail.com">premiumservicosgo@gmail.com</a>
+    <div class="kicker"><span>Programas do Estado</span></div>
+    <h2>Fluência nos instrumentos do Governo de Goiás</h2>
+    <div class="prog-grid">
+      <div class="prog">
+        <span class="nome">REFORMAR</span>
+        <span class="modo">MANUTENÇÃO PLANEJADA</span>
+        <p>Programa estadual da SEDUC para manutenção e reformas em escolas públicas de Goiás. Planejamento, execução e prestação de contas dentro do fluxo do programa.</p>
+      </div>
+      <div class="prog">
+        <span class="nome">EMERGENCIAL</span>
+        <span class="modo">RESPOSTA RÁPIDA</span>
+        <p>Modalidade de contratação para intervenções urgentes em estruturas públicas, com mobilização imediata de equipe e prazo reduzido de execução.</p>
+      </div>
     </div>
-    <div class="cta-resposta">Resposta inicial em até <span>1 dia útil</span> · Emergenciais: retorno <span>no mesmo dia</span></div>
+    <p class="prog-note">Também atendemos licitações tradicionais, convênios e recursos próprios.</p>
+  </div>
+</section>
+
+<!-- Sobre -->
+<section class="sobre" id="sobre">
+  <div class="sobre-grid">
+    <div class="sobre-photo">
+      <img src="img/equipe-construtora-premium-policia-militar-goias.jpg" alt="Equipe da Construtora Premium em reunião com oficiais da Polícia Militar de Goiás" width="1200" height="1600" loading="lazy" decoding="async">
+      <div class="sobre-selo">
+        <b>CREA-GO</b>
+        <small>RESPONSABILIDADE TÉCNICA</small>
+      </div>
+    </div>
+    <div class="sobre-text">
+      <div class="kicker"><span>Quem Somos</span></div>
+      <h2>A linguagem do setor público, falada com fluência.</h2>
+      <p>A Construtora Premium é especializada em obras institucionais para órgãos de segurança, justiça e ensino público em Goiás. Conhecemos as exigências de cada fiscalização e entregamos cada obra com habite-se, ART e termo de recebimento sem pendências.</p>
+      <p>Cada contrato segue plano de prazo formal, medições semanais documentadas e relatório de obra para o gestor. O resultado são mais de 65 obras entregues e 50.000 m² construídos para o Estado.</p>
+      <div class="sobre-list">
+        <div><i></i><span>Entrega com documentação completa para a fiscalização</span></div>
+        <div><i></i><span>Cronograma com medição semanal e relatório ao gestor</span></div>
+        <div><i></i><span>Obras sem interrupção da operação das unidades</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+  <img src="img/pavimentacao-obra-publica-goiania-construtora-premium.jpg" alt="Maquinário pesado em obra pública da Construtora Premium em Goiânia" width="900" height="1600" loading="lazy" decoding="async">
+  <div class="shade"></div>
+  <div class="cta-content">
+    <span class="kicker-plain">ATENDIMENTO INSTITUCIONAL</span>
+    <h2>Vai abrir licitação ou tem uma reforma emergencial?</h2>
+    <p>Resposta inicial em até 1 dia útil. Para demandas emergenciais, retorno no mesmo dia.</p>
+    <div class="cta-actions">
+      <a class="btn-gold" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">CHAMAR NO WHATSAPP</a>
+      <a class="btn-ghost" href="tel:+5562998259418">(62) 99825-9418</a>
+    </div>
   </div>
 </section>
 
 <!-- Rodapé -->
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
+<footer id="contato">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="brand">
         <img src="img/logo-construtora-premium-192.png" alt="Logo da Construtora Premium" width="192" height="192" loading="lazy">
-        <div>
-          <b>Construtora Premium</b>
-          <small>Obras Públicas · Goiás</small>
-          <p>Projetos, construção e reforma de obras públicas em todo o estado de Goiás. Sede em Goiânia/GO.</p>
-        </div>
+        <span class="brand-name">
+          <span class="top">CONSTRUTORA</span>
+          <span class="sub">PREMIUM</span>
+        </span>
       </div>
-      <div class="foot-col">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#quem-somos">Quem Somos</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#obras">Obras</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Contato</h4>
-        <ul>
-          <li><a href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp (62) 99825-9418</a></li>
-          <li><a href="tel:+5562998259418">Telefone (62) 99825-9418</a></li>
-          <li><a href="mailto:premiumservicosgo@gmail.com">premiumservicosgo@gmail.com</a></li>
-          <li><a href="https://www.instagram.com/construtora_premiumm/" target="_blank" rel="noopener">Instagram @construtora_premiumm</a></li>
-          <li>Goiânia/GO · Atendemos todo o estado de Goiás</li>
-        </ul>
-      </div>
+      <p>Construtora especializada em obras públicas em Goiás. Colégios militares, delegacias e batalhões com engenharia, construção, reforma e elaboração de projetos.</p>
+      <a class="insta" href="https://www.instagram.com/construtora_premiumm/" target="_blank" rel="noopener">@construtora_premiumm</a>
     </div>
-    <div class="foot-bottom">
-      <span>© 2026 Construtora Premium Ltda. · CREA-GO</span>
+    <div class="foot-col">
+      <span class="head">NAVEGAÇÃO</span>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Quem Somos</a>
+      <a href="#obras">Obras</a>
+      <a href="#contato">Contato</a>
     </div>
+    <div class="foot-col">
+      <span class="head">CONTATO</span>
+      <a href="tel:+5562998259418">(62) 99825-9418</a>
+      <a href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:premiumservicosgo@gmail.com">premiumservicosgo@gmail.com</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Construtora Premium Ltda. · CREA-GO</span>
+    <span>Atuação em todo o Estado de Goiás</span>
   </div>
 </footer>
 
 <!-- Botão flutuante WhatsApp -->
 <a class="wa-float" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.46 1.72 6.4L3.2 28.8l6.58-1.68a12.74 12.74 0 0 0 6.22 1.6h.01c7.06 0 12.79-5.74 12.79-12.8s-5.74-12.72-12.8-12.72zm0 23.36h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-3.9 1 1.04-3.8-.26-.4a10.55 10.55 0 0 1-1.63-5.65c0-5.86 4.77-10.64 10.65-10.64 2.84 0 5.51 1.11 7.52 3.12a10.57 10.57 0 0 1 3.11 7.53c0 5.87-4.77 10.55-10.73 10.55zm5.83-7.96c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.58-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66s1.14 3.09 1.3 3.3c.16.21 2.25 3.44 5.45 4.82.76.33 1.36.53 1.82.67.77.25 1.46.21 2.01.13.61-.09 1.89-.77 2.15-1.52.27-.75.27-1.38.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#14100A" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.83 14.12c-.25.7-1.45 1.33-2.02 1.38-.52.05-1.17.24-3.95-.82-3.34-1.32-5.47-4.73-5.63-4.95-.16-.22-1.35-1.8-1.35-3.43s.86-2.43 1.16-2.76c.3-.33.66-.41.88-.41l.63.01c.2.01.47-.08.74.56.27.65.93 2.27 1.01 2.43.08.16.14.36.03.58-.11.22-.16.36-.32.55l-.48.56c-.16.16-.32.34-.14.66.18.32.82 1.35 1.76 2.19 1.21 1.08 2.23 1.41 2.55 1.57.32.16.5.13.69-.08.19-.22.79-.92 1-1.24.21-.32.42-.26.71-.16.29.11 1.85.87 2.16 1.03.32.16.53.24.61.37.08.14.08.79-.17 1.49z"/></svg>
 </a>
 
 <script>
-document.getElementById('navToggle').addEventListener('click',function(){
-  document.getElementById('menu').classList.toggle('open');
-});
-document.querySelectorAll('#menu a').forEach(function(a){
-  a.addEventListener('click',function(){
-    document.getElementById('menu').classList.remove('open');
-  });
+var toggle=document.getElementById('navToggle');
+var menu=document.getElementById('mobileMenu');
+toggle.addEventListener('click',function(){menu.classList.toggle('open')});
+menu.querySelectorAll('a').forEach(function(a){
+  a.addEventListener('click',function(){menu.classList.remove('open')});
 });
 </script>
 
