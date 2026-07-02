@@ -258,8 +258,8 @@ nav .nav-cta:hover{background:var(--gold-hover)}
   max-width:1280px;margin:0 auto;
   display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
 }
-.sobre-photo{position:relative}
-.sobre-photo img{width:100%;height:560px;object-fit:cover;border:1px solid var(--line)}
+.sobre-photo{position:relative;display:flex;flex-direction:column;gap:28px}
+.sobre-photo img{width:100%;height:300px;object-fit:cover;border:1px solid var(--line)}
 .sobre-selo{
   position:absolute;bottom:-1px;left:-1px;background:var(--gold);color:var(--gold-dark);
   padding:22px 30px;display:flex;flex-direction:column;gap:2px;
@@ -333,7 +333,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
   .obras-grid{grid-template-columns:1fr 1fr}
   .prog-grid{grid-template-columns:1fr}
   .sobre-grid{grid-template-columns:1fr;gap:56px}
-  .sobre-photo img{height:440px}
+  .sobre-photo img{height:320px}
   .foot-grid{grid-template-columns:1fr;gap:44px}
   .obra-destaque .info{flex-direction:column;align-items:flex-start;gap:20px}
   .obra-destaque .prazo{align-items:flex-start}
@@ -355,7 +355,8 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
   .obras-grid{grid-template-columns:1fr}
   .obra-card{height:320px}
   .prog{padding:38px 28px}
-  .sobre-photo img{height:380px}
+  .sobre-photo{gap:18px}
+  .sobre-photo img{height:240px}
   .sobre-selo{padding:16px 22px}
   .sobre-selo b{font-size:21px}
   footer{padding:64px 22px 32px}
@@ -567,7 +568,8 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 <section class="sobre" id="sobre">
   <div class="sobre-grid">
     <div class="sobre-photo">
-      <img src="img/equipe.jpeg" alt="Equipe da Construtora Premium reunida com oficiais da Polícia Militar de Goiás em sala de reunião" width="1200" height="1600" loading="lazy" decoding="async">
+      <img src="img/equipe.jpeg" alt="Equipe da Construtora Premium em evento da Polícia Civil de Goiás" width="1200" height="700" loading="lazy" decoding="async">
+      <img src="img/equipe2.jpeg" alt="Equipe da Construtora Premium em obra pública em Goiás" width="1200" height="1600" loading="lazy" decoding="async">
       <div class="sobre-selo">
         <b>CREA-GO</b>
         <small>RESPONSABILIDADE TÉCNICA</small>
