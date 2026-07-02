@@ -235,6 +235,32 @@ nav .nav-cta:hover{background:var(--gold-hover)}
 .obra-card .titulo{font-family:'Marcellus',serif;font-size:21px;line-height:1.25}
 .obra-card .local{font-size:13px;color:rgba(237,235,228,.6)}
 
+/* ===== Reconhecimento ===== */
+.reconhecimento{padding:0 48px 120px}
+.reconhecimento-card{
+  max-width:1280px;margin:0 auto;
+  display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;
+  border:1px solid rgba(227,166,59,.3);background:rgba(227,166,59,.05);
+}
+.reconhecimento-photo{align-self:stretch;min-height:100%}
+.reconhecimento-photo img{width:100%;height:100%;min-height:480px;object-fit:cover}
+.reconhecimento-text{padding:64px 56px}
+.reconhecimento-text .kicker{margin-bottom:24px}
+.reconhecimento-text blockquote{
+  font-family:'Marcellus',serif;font-size:clamp(22px,2.2vw,30px);
+  line-height:1.45;color:var(--ink);margin-bottom:28px;
+}
+.reconhecimento-text blockquote em{font-style:normal;color:var(--gold)}
+.reconhecimento-text .autor{display:flex;flex-direction:column;gap:4px}
+.reconhecimento-text .autor b{font-size:14px;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reconhecimento-text .autor small{font-size:13px;letter-spacing:.08em;color:var(--faint)}
+.reconhecimento-text .obra-link{
+  display:inline-block;margin-top:32px;font-size:13px;letter-spacing:.14em;
+  color:var(--soft);border-bottom:1px solid rgba(227,166,59,.5);
+  padding-bottom:4px;transition:color .2s;
+}
+.reconhecimento-text .obra-link:hover{color:var(--gold)}
+
 /* ===== Programas ===== */
 .programas{
   background:var(--panel);
@@ -332,6 +358,8 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
   .servicos-grid{grid-template-columns:1fr}
   .obras-grid{grid-template-columns:1fr 1fr}
   .prog-grid{grid-template-columns:1fr}
+  .reconhecimento-card{grid-template-columns:1fr}
+  .reconhecimento-photo img{min-height:0;height:420px}
   .sobre-grid{grid-template-columns:1fr;gap:56px}
   .sobre-photo img{height:320px}
   .foot-grid{grid-template-columns:1fr;gap:44px}
@@ -340,7 +368,10 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 }
 @media (max-width:640px){
   .pad,.servicos,.programas,.sobre,.cta{padding-left:22px;padding-right:22px}
-  .obras{padding-left:22px;padding-right:22px}
+  .obras,.reconhecimento{padding-left:22px;padding-right:22px}
+  .reconhecimento{padding-bottom:88px}
+  .reconhecimento-photo img{height:320px}
+  .reconhecimento-text{padding:40px 28px}
   .hero{padding:140px 22px 56px;min-height:100vh;min-height:100svh}
   .hero p{font-size:17px}
   .hero-stats{gap:28px 40px;margin-top:64px}
@@ -539,6 +570,24 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
           <span class="local">Goiânia/GO</span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reconhecimento -->
+<section class="reconhecimento" id="reconhecimento">
+  <div class="reconhecimento-card">
+    <div class="reconhecimento-photo">
+      <img src="img/agradecimento.jpeg" alt="Placa de agradecimento da CORE/GT3 da Polícia Civil do Estado de Goiás à Construtora Premium pela reforma da base" width="1600" height="1600" loading="lazy" decoding="async">
+    </div>
+    <div class="reconhecimento-text">
+      <div class="kicker"><span>Reconhecimento</span></div>
+      <blockquote>"O suporte prestado <em>fortalece a atuação institucional</em> da Polícia Civil e contribui para a <em>excelência operacional</em>."</blockquote>
+      <div class="autor">
+        <b>CORE/GT3 — POLÍCIA CIVIL DO ESTADO DE GOIÁS</b>
+        <small>Placa de agradecimento pela revitalização e reforma da base · Goiânia, 2025</small>
+      </div>
+      <a class="obra-link" href="#obras">Conheça a obra da Base CORE/GT3 no portfólio ↑</a>
     </div>
   </div>
 </section>
