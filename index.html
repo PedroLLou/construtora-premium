@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Construtora Premium | Obras Públicas em Goiânia e Goiás</title>
+<title>Construtora de Obras Públicas em Goiânia e Goiás | Premium</title>
 <meta name="description" content="Construção e reforma de obras públicas em Goiás e DF para PM-GO, PC-GO, PC-DF, MPGO, SEDUC e ALEGO. Mais de 65 obras entregues. Orçamento pelo WhatsApp.">
 <link rel="canonical" href="https://premiumconstrutora.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:url" content="https://premiumconstrutora.com.br/">
-<meta property="og:title" content="Construtora Premium | Obras Públicas em Goiânia e Goiás">
+<meta property="og:title" content="Construtora de Obras Públicas em Goiânia e Goiás | Premium">
 <meta property="og:description" content="Projetos, construção e reforma para PM-GO, PC-GO, PC-DF, MPGO, SEDUC e ALEGO. Delegacias, batalhões e colégios entregues com o rigor que a fiscalização exige.">
 <meta property="og:image" content="https://premiumconstrutora.com.br/img/og-capa.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Construtora Premium | Obras Públicas em Goiânia e Goiás">
+<meta name="twitter:title" content="Construtora de Obras Públicas em Goiânia e Goiás | Premium">
 <meta name="twitter:description" content="Projetos, construção e reforma para PM-GO, PC-GO, PC-DF, MPGO, SEDUC e ALEGO. Mais de 65 obras entregues.">
 <meta name="twitter:image" content="https://premiumconstrutora.com.br/img/og-capa.jpg">
 <meta name="theme-color" content="#0B111F">
@@ -53,6 +53,54 @@
   },
   "sameAs": [
     "https://www.instagram.com/construtora_premiumm/"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "A Construtora Premium participa de licitações públicas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Atendemos licitações tradicionais, convênios, programas estaduais como o REFORMAR da SEDUC, contratações emergenciais e obras viabilizadas por emendas parlamentares. A equipe técnica analisa o edital ou o escopo e retorna com os próximos passos em até 1 dia útil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais órgãos públicos a Construtora Premium atende?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Atendemos a Polícia Militar de Goiás (PM-GO), a Polícia Civil de Goiás (PC-GO), a Polícia Civil do Distrito Federal (PC-DF), o Ministério Público de Goiás (MPGO), a Secretaria de Educação (SEDUC) e a Assembleia Legislativa de Goiás (ALEGO)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A Construtora Premium atende fora de Goiânia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A sede fica em Goiânia, mas executamos obras públicas em todo o estado de Goiás e também no Distrito Federal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que documentação a construtora entrega ao final da obra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cada obra é entregue com habite-se, ART e termo de recebimento sem pendências para a fiscalização, além de medições semanais documentadas e relatório de obra para o gestor durante toda a execução."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como funciona a contratação emergencial de obras públicas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A contratação emergencial é a modalidade para intervenções urgentes em estruturas públicas, com prazo reduzido. Para demandas emergenciais, a Construtora Premium mobiliza equipe e canteiro rapidamente e dá retorno no mesmo dia."
+      }
+    }
   ]
 }
 </script>
@@ -321,6 +369,35 @@ nav .nav-cta:hover{background:var(--gold-hover)}
 .sobre-list i{width:8px;height:8px;background:var(--gold);flex-shrink:0}
 .sobre-list span{font-size:16px;color:rgba(237,235,228,.85)}
 
+/* ===== FAQ ===== */
+.faq{padding:0 48px 120px}
+.faq .wrap{max-width:900px}
+.faq h2{font-size:clamp(32px,3.4vw,48px);line-height:1.15;margin-bottom:48px}
+.faq-item{border:1px solid var(--line);background:var(--card);margin-bottom:14px}
+.faq-item summary{
+  cursor:pointer;list-style:none;padding:24px 28px;
+  font-family:'Marcellus',serif;font-size:19px;color:var(--ink);
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--gold);font-size:24px;flex-shrink:0}
+.faq-item[open] summary::after{content:"–"}
+.faq-item p{padding:0 28px 24px;font-size:15.5px;line-height:1.75;color:var(--muted)}
+
+/* ===== Áreas de atuação ===== */
+.areas{padding:0 48px 120px}
+.areas h2{font-size:clamp(32px,3.4vw,48px);line-height:1.15;margin-bottom:48px}
+.areas-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.area-link{
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  border:1px solid var(--line);background:var(--card);padding:26px 28px;
+  transition:border-color .3s;
+}
+.area-link:hover{border-color:rgba(227,166,59,.45)}
+.area-link b{font-family:'Marcellus',serif;font-weight:400;font-size:20px;color:var(--ink)}
+.area-link small{display:block;font-size:13px;color:var(--faint);margin-top:4px}
+.area-link .seta{color:var(--gold);font-size:22px;flex-shrink:0}
+
 /* ===== CTA ===== */
 .cta{position:relative;padding:140px 48px;overflow:hidden}
 .cta > img{
@@ -381,6 +458,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
   .servicos-grid{grid-template-columns:1fr}
   .obras-grid{grid-template-columns:1fr 1fr}
   .prog-grid{grid-template-columns:1fr}
+  .areas-grid{grid-template-columns:1fr}
   .reconhecimento-card{grid-template-columns:1fr}
   .reconhecimento-photo img{min-height:0;height:420px}
   .sobre-grid{grid-template-columns:1fr;gap:56px}
@@ -391,7 +469,8 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 }
 @media (max-width:640px){
   .pad,.servicos,.programas,.sobre,.cta{padding-left:22px;padding-right:22px}
-  .obras,.reconhecimento{padding-left:22px;padding-right:22px}
+  .obras,.reconhecimento,.faq,.areas{padding-left:22px;padding-right:22px}
+  .faq,.areas{padding-bottom:88px}
   .reconhecimento{padding-bottom:88px}
   .reconhecimento-photo img{height:320px}
   .reconhecimento-text{padding:40px 28px}
@@ -462,7 +541,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
   <div class="hero-fade"></div>
   <div class="hero-content">
     <div class="kicker"><span>Obras Públicas em Goiás</span></div>
-    <h1>Engenharia pública com padrão de excelência.</h1>
+    <h1>Construtora de obras públicas em Goiânia, Goiás e DF.</h1>
     <p>Projetos, construção e reforma para PM-GO, PC-GO, PC-DF, MPGO, SEDUC e Assembleia Legislativa. Delegacias, batalhões e colégios militares e estaduais entregues com o rigor que a fiscalização exige.</p>
     <div class="hero-actions">
       <a class="btn-gold" href="#obras">VER PORTFÓLIO</a>
@@ -526,7 +605,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
       <span>Seleção de projetos entregues para instituições públicas de Goiás.</span>
     </div>
 
-    <a class="obra-destaque" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">
+    <a class="obra-destaque" href="/reforma-base-core-gt3">
       <img src="img/reforma-base-core-gt3-policia-civil-goiania.webp" alt="Reforma da Base CORE/GT3 da Polícia Civil em Goiânia, Goiás: muro da base de operações especiais" width="1600" height="900" loading="lazy" decoding="async">
       <div class="shade"></div>
       <div class="info">
@@ -614,7 +693,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
         <b>CORE/GT3 · POLÍCIA CIVIL DO ESTADO DE GOIÁS</b>
         <small>Placa de agradecimento pela revitalização e reforma da base · Goiânia, 2025</small>
       </div>
-      <a class="obra-link" href="#obras">Conheça a obra da Base CORE/GT3 no portfólio ↑</a>
+      <a class="obra-link" href="/reforma-base-core-gt3">Conheça a obra da Base CORE/GT3 em detalhes →</a>
     </div>
   </div>
 </section>
@@ -645,6 +724,32 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
   </div>
 </section>
 
+<!-- Áreas de atuação -->
+<section class="areas" id="areas" style="padding-top:120px">
+  <div class="wrap">
+    <div class="kicker"><span>Áreas de Atuação</span></div>
+    <h2>Conheça cada frente em detalhe</h2>
+    <div class="areas-grid">
+      <a class="area-link" href="/reforma-de-delegacias-e-batalhoes">
+        <span><b>Reforma de delegacias e batalhões</b><small>PC-GO, PM-GO e PC-DF: unidades policiais sem interromper a operação</small></span>
+        <span class="seta">→</span>
+      </a>
+      <a class="area-link" href="/reforma-de-escolas-e-colegios">
+        <span><b>Reforma de escolas e colégios</b><small>SEDUC, Programa Reformar, colégios estaduais e militares</small></span>
+        <span class="seta">→</span>
+      </a>
+      <a class="area-link" href="/obras-parlamentares">
+        <span><b>Obras parlamentares</b><small>Execução de emendas e recursos destinados, com prestação de contas</small></span>
+        <span class="seta">→</span>
+      </a>
+      <a class="area-link" href="/construtora-de-obras-publicas-no-df">
+        <span><b>Obras públicas no Distrito Federal</b><small>Atendimento à PC-DF e a órgãos públicos do DF</small></span>
+        <span class="seta">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- Sobre -->
 <section class="sobre" id="sobre">
   <div class="sobre-grid">
@@ -667,6 +772,34 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
         <div><i></i><span>Obras sem interrupção da operação das unidades</span></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="kicker"><span>Perguntas Frequentes</span></div>
+    <h2>Dúvidas comuns de gestores públicos</h2>
+    <details class="faq-item">
+      <summary>A Construtora Premium participa de licitações públicas?</summary>
+      <p>Sim. Atendemos licitações tradicionais, convênios, programas estaduais como o REFORMAR da SEDUC, contratações emergenciais e obras viabilizadas por emendas parlamentares. A equipe técnica analisa o edital ou o escopo e retorna com os próximos passos em até 1 dia útil.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Quais órgãos públicos a Construtora Premium atende?</summary>
+      <p>Atendemos a Polícia Militar de Goiás (PM-GO), a Polícia Civil de Goiás (PC-GO), a Polícia Civil do Distrito Federal (PC-DF), o Ministério Público de Goiás (MPGO), a Secretaria de Educação (SEDUC) e a Assembleia Legislativa de Goiás (ALEGO).</p>
+    </details>
+    <details class="faq-item">
+      <summary>A Construtora Premium atende fora de Goiânia?</summary>
+      <p>Sim. A sede fica em Goiânia, mas executamos obras públicas em todo o estado de Goiás e também no Distrito Federal.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Que documentação a construtora entrega ao final da obra?</summary>
+      <p>Cada obra é entregue com habite-se, ART e termo de recebimento sem pendências para a fiscalização, além de medições semanais documentadas e relatório de obra para o gestor durante toda a execução.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Como funciona a contratação emergencial de obras públicas?</summary>
+      <p>A contratação emergencial é a modalidade para intervenções urgentes em estruturas públicas, com prazo reduzido. Para demandas emergenciais, a Construtora Premium mobiliza equipe e canteiro rapidamente e dá retorno no mesmo dia.</p>
+    </details>
   </div>
 </section>
 
@@ -705,6 +838,12 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
       <a href="#sobre">Quem Somos</a>
       <a href="#obras">Obras</a>
       <a href="#contato">Contato</a>
+      <span class="head" style="margin-top:16px">ÁREAS DE ATUAÇÃO</span>
+      <a href="/reforma-de-delegacias-e-batalhoes">Reforma de delegacias e batalhões</a>
+      <a href="/reforma-de-escolas-e-colegios">Reforma de escolas e colégios</a>
+      <a href="/obras-parlamentares">Obras parlamentares</a>
+      <a href="/construtora-de-obras-publicas-no-df">Obras públicas no DF</a>
+      <a href="/reforma-base-core-gt3">Case: Base CORE/GT3</a>
     </div>
     <div class="foot-col">
       <span class="head">CONTATO</span>
