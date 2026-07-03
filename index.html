@@ -3,20 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Construtora Premium — Obras Públicas em Goiás | PM-GO, PC-GO, MPGO e SEDUC</title>
-<meta name="description" content="Construtora Premium: projetos, construção e reforma de obras públicas em Goiás — colégios militares, delegacias e batalhões para PM-GO, PC-GO, MPGO e SEDUC. CREA-GO, 65+ obras entregues, 50.000 m² construídos.">
+<title>Construtora Premium | Obras Públicas em Goiânia e Goiás</title>
+<meta name="description" content="Projetos, construção e reforma de obras públicas em Goiânia e Goiás para PM-GO, PC-GO, MPGO e SEDUC. Mais de 65 obras entregues. Orçamento pelo WhatsApp.">
 <link rel="canonical" href="https://premiumconstrutora.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:url" content="https://premiumconstrutora.com.br/">
-<meta property="og:title" content="Construtora Premium — Engenharia pública com padrão de excelência.">
+<meta property="og:title" content="Construtora Premium | Obras Públicas em Goiânia e Goiás">
 <meta property="og:description" content="Projetos, construção e reforma para PM-GO, PC-GO, MPGO e SEDUC. Delegacias, batalhões e colégios militares entregues com o rigor que a fiscalização exige.">
-<meta property="og:image" content="https://premiumconstrutora.com.br/img/reforma-base-core-gt3-policia-civil-goiania.jpg">
+<meta property="og:image" content="https://premiumconstrutora.com.br/img/og-capa.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Construtora Premium | Obras Públicas em Goiânia e Goiás">
+<meta name="twitter:description" content="Projetos, construção e reforma para PM-GO, PC-GO, MPGO e SEDUC. Mais de 65 obras entregues em Goiás.">
+<meta name="twitter:image" content="https://premiumconstrutora.com.br/img/og-capa.jpg">
 <meta name="theme-color" content="#0B111F">
 <link rel="icon" type="image/png" href="img/logo-construtora-premium-192.png">
 <link rel="apple-touch-icon" href="img/logo-construtora-premium-192.png">
-<link rel="preload" as="image" href="img/reforma-base-core-gt3-policia-civil-goiania-mobile.jpg" media="(max-width:640px)">
-<link rel="preload" as="image" href="img/reforma-base-core-gt3-policia-civil-goiania.jpg" media="(min-width:641px)">
+<link rel="preload" as="image" href="img/reforma-base-core-gt3-policia-civil-goiania-mobile.webp" media="(max-width:640px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/reforma-base-core-gt3-policia-civil-goiania.webp" media="(min-width:641px)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -30,7 +34,7 @@
   "telephone": "+55-62-99825-9418",
   "email": "premiumservicosgo@gmail.com",
   "url": "https://premiumconstrutora.com.br/",
-  "image": "https://premiumconstrutora.com.br/img/reforma-base-core-gt3-policia-civil-goiania.jpg",
+  "image": "https://premiumconstrutora.com.br/img/og-capa.jpg",
   "areaServed": {
     "@type": "State",
     "name": "Goiás"
@@ -64,6 +68,17 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  padding:14px 24px;background:#E3A63B;color:#14100A;
+  font-weight:700;font-size:14px;letter-spacing:.06em;
+}
+.skip-link:focus{left:0}
+a:focus-visible,button:focus-visible{outline:2px solid #E3A63B;outline-offset:3px}
 body{
   font-family:'Archivo',sans-serif;
   background:var(--bg);
@@ -337,6 +352,8 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
   display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
 }
 .foot-bottom span{font-size:13px;color:rgba(237,235,228,.45)}
+.rodape-credito a{font-size:13px;color:rgba(237,235,228,.45);transition:color .2s}
+.rodape-credito a:hover{color:var(--gold)}
 
 /* ===== WhatsApp float ===== */
 .wa-float{
@@ -399,6 +416,8 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 </head>
 <body>
 
+<a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
 <!-- Cabeçalho -->
 <header>
   <a href="#inicio" class="brand">
@@ -414,7 +433,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
     <a class="nav-link" href="#obras">OBRAS</a>
     <a class="nav-link" href="#contato">CONTATO</a>
     <a class="nav-cta" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">SOLICITAR ORÇAMENTO</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -430,8 +449,8 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 <!-- HERO -->
 <section class="hero" id="inicio">
   <picture class="hero-bg">
-    <source media="(max-width:640px)" srcset="img/reforma-base-core-gt3-policia-civil-goiania-mobile.jpg">
-    <img src="img/reforma-base-core-gt3-policia-civil-goiania.jpg" alt="Obra pública executada pela Construtora Premium — reforma da Base CORE/GT3 da Polícia Civil em Goiânia" width="1600" height="900" fetchpriority="high">
+    <source media="(max-width:640px)" srcset="img/reforma-base-core-gt3-policia-civil-goiania-mobile.webp">
+    <img src="img/reforma-base-core-gt3-policia-civil-goiania.webp" alt="Obra pública executada pela Construtora Premium: reforma da Base CORE/GT3 da Polícia Civil em Goiânia" width="1600" height="900" fetchpriority="high" decoding="async">
   </picture>
   <div class="hero-shade"></div>
   <div class="hero-fade"></div>
@@ -500,7 +519,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
     </div>
 
     <a class="obra-destaque" href="https://wa.me/5562998259418?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Construtora%20Premium%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">
-      <img src="img/reforma-base-core-gt3-policia-civil-goiania.jpg" alt="Reforma da Base CORE/GT3 da Polícia Civil em Goiânia, Goiás — muro da base de operações especiais" width="1600" height="900" loading="lazy" decoding="async">
+      <img src="img/reforma-base-core-gt3-policia-civil-goiania.webp" alt="Reforma da Base CORE/GT3 da Polícia Civil em Goiânia, Goiás: muro da base de operações especiais" width="1600" height="900" loading="lazy" decoding="async">
       <div class="shade"></div>
       <div class="info">
         <div class="info-text">
@@ -517,7 +536,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 
     <div class="obras-grid">
       <div class="obra-card">
-        <img src="img/reforma-4-distrito-policial-aparecida-de-goiania.jpg" alt="Reforma de fachada do 4º Distrito Policial de Aparecida de Goiânia — Central de Flagrantes da Polícia Civil" width="1200" height="1600" loading="lazy" decoding="async">
+        <img src="img/reforma-4-distrito-policial-aparecida-de-goiania.webp" alt="Reforma de fachada do 4º Distrito Policial de Aparecida de Goiânia, Central de Flagrantes da Polícia Civil" width="900" height="1200" loading="lazy" decoding="async">
         <div class="shade"></div>
         <div class="info">
           <span class="orgao-tag">POLÍCIA CIVIL</span>
@@ -526,7 +545,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
         </div>
       </div>
       <div class="obra-card">
-        <img src="img/pintura-brasao-delegacia-policia-civil-goiania.jpg" alt="Pintura artística do brasão da Polícia Civil na 17ª Delegacia de Polícia em Goiânia, Goiás" width="900" height="1600" loading="lazy" decoding="async">
+        <img src="img/pintura-brasao-delegacia-policia-civil-goiania.webp" alt="Pintura artística do brasão da Polícia Civil na 17ª Delegacia de Polícia em Goiânia, Goiás" width="900" height="1600" loading="lazy" decoding="async">
         <div class="shade"></div>
         <div class="info">
           <span class="orgao-tag">POLÍCIA CIVIL</span>
@@ -535,7 +554,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
         </div>
       </div>
       <div class="obra-card">
-        <img src="img/pintura-muro-policia-militar-goias.jpg" alt="Pintura de muro em unidade da Polícia Militar do Estado de Goiás com identidade visual do Governo de Goiás" width="720" height="1280" loading="lazy" decoding="async">
+        <img src="img/pintura-muro-policia-militar-goias.webp" alt="Pintura de muro em unidade da Polícia Militar do Estado de Goiás com identidade visual do Governo de Goiás" width="720" height="1280" loading="lazy" decoding="async">
         <div class="shade"></div>
         <div class="info">
           <span class="orgao-tag">POLÍCIA MILITAR</span>
@@ -544,7 +563,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
         </div>
       </div>
       <div class="obra-card">
-        <img src="img/instalacao-brasao-policia-civil-goiania.jpg" alt="Instalação de brasão da Polícia Civil e recuperação de cúpula em unidade de Goiânia, Goiás" width="960" height="1280" loading="lazy" decoding="async">
+        <img src="img/instalacao-brasao-policia-civil-goiania.webp" alt="Instalação de brasão da Polícia Civil e recuperação de cúpula em unidade de Goiânia, Goiás" width="960" height="1280" loading="lazy" decoding="async">
         <div class="shade"></div>
         <div class="info">
           <span class="orgao-tag">POLÍCIA CIVIL</span>
@@ -553,7 +572,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
         </div>
       </div>
       <div class="obra-card">
-        <img src="img/reforma-escola-publica-seduc-goias.jpg" alt="Manutenção de colégio estadual da SEDUC em Goiás pelo Programa Reformar" width="900" height="1600" loading="lazy" decoding="async">
+        <img src="img/reforma-escola-publica-seduc-goias.webp" alt="Manutenção de colégio estadual da SEDUC em Goiás pelo Programa Reformar" width="900" height="1600" loading="lazy" decoding="async">
         <div class="shade"></div>
         <div class="info">
           <span class="orgao-tag">SEDUC</span>
@@ -562,7 +581,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
         </div>
       </div>
       <div class="obra-card">
-        <img src="img/obra-17-distrito-policial-policia-civil-goiania.jpg" alt="Obra de adequações no 17º Distrito Policial da Polícia Civil em Goiânia, Goiás" width="900" height="1600" loading="lazy" decoding="async">
+        <img src="img/obra-17-distrito-policial-policia-civil-goiania.webp" alt="Obra de adequações no 17º Distrito Policial da Polícia Civil em Goiânia, Goiás" width="900" height="1600" loading="lazy" decoding="async">
         <div class="shade"></div>
         <div class="info">
           <span class="orgao-tag">POLÍCIA CIVIL</span>
@@ -578,13 +597,13 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 <section class="reconhecimento" id="reconhecimento">
   <div class="reconhecimento-card">
     <div class="reconhecimento-photo">
-      <img src="img/agradecimento.jpeg" alt="Placa de agradecimento da CORE/GT3 da Polícia Civil do Estado de Goiás à Construtora Premium pela reforma da base" width="1600" height="1600" loading="lazy" decoding="async">
+      <img src="img/agradecimento.webp" alt="Placa de agradecimento da CORE/GT3 da Polícia Civil do Estado de Goiás à Construtora Premium pela reforma da base" width="900" height="900" loading="lazy" decoding="async">
     </div>
     <div class="reconhecimento-text">
       <div class="kicker"><span>Reconhecimento</span></div>
       <blockquote>"O suporte prestado <em>fortalece a atuação institucional</em> da Polícia Civil e contribui para a <em>excelência operacional</em>."</blockquote>
       <div class="autor">
-        <b>CORE/GT3 — POLÍCIA CIVIL DO ESTADO DE GOIÁS</b>
+        <b>CORE/GT3 · POLÍCIA CIVIL DO ESTADO DE GOIÁS</b>
         <small>Placa de agradecimento pela revitalização e reforma da base · Goiânia, 2025</small>
       </div>
       <a class="obra-link" href="#obras">Conheça a obra da Base CORE/GT3 no portfólio ↑</a>
@@ -617,8 +636,8 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 <section class="sobre" id="sobre">
   <div class="sobre-grid">
     <div class="sobre-photo">
-      <img src="img/equipe.jpeg" alt="Equipe da Construtora Premium em evento da Polícia Civil de Goiás" width="1200" height="700" loading="lazy" decoding="async">
-      <img src="img/equipe2.jpeg" alt="Equipe da Construtora Premium em obra pública em Goiás" width="1200" height="1600" loading="lazy" decoding="async">
+      <img src="img/equipe.webp" alt="Equipe da Construtora Premium em evento da Polícia Civil de Goiás" width="1200" height="700" loading="lazy" decoding="async">
+      <img src="img/equipe2.webp" alt="Equipe da Construtora Premium em obra pública em Goiás" width="900" height="1200" loading="lazy" decoding="async">
       <div class="sobre-selo">
         <b>CREA-GO</b>
         <small>RESPONSABILIDADE TÉCNICA</small>
@@ -640,7 +659,7 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 
 <!-- CTA -->
 <section class="cta" id="cta">
-  <img src="img/pavimentacao-obra-publica-goiania-construtora-premium.jpg" alt="Maquinário pesado em obra pública da Construtora Premium em Goiânia" width="900" height="1600" loading="lazy" decoding="async">
+  <img src="img/pavimentacao-obra-publica-goiania-construtora-premium.webp" alt="Maquinário pesado em obra pública da Construtora Premium em Goiânia" width="900" height="1600" loading="lazy" decoding="async">
   <div class="shade"></div>
   <div class="cta-content">
     <span class="kicker-plain">ATENDIMENTO INSTITUCIONAL</span>
@@ -684,6 +703,9 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
   <div class="foot-bottom">
     <span>© 2026 Construtora Premium Ltda. · CREA-GO</span>
     <span>Atuação em todo o Estado de Goiás</span>
+    <p class="rodape-credito">
+      <a href="https://somoskyber.com.br" target="_blank" rel="noopener">Desenvolvido por Kyber Tech</a>
+    </p>
   </div>
 </footer>
 
@@ -695,9 +717,23 @@ footer{border-top:1px solid var(--line-gold);padding:80px 48px 40px;background:v
 <script>
 var toggle=document.getElementById('navToggle');
 var menu=document.getElementById('mobileMenu');
-toggle.addEventListener('click',function(){menu.classList.toggle('open')});
+function fecharMenu(){
+  menu.classList.remove('open');
+  toggle.setAttribute('aria-expanded','false');
+}
+toggle.addEventListener('click',function(){
+  var aberto=menu.classList.toggle('open');
+  toggle.setAttribute('aria-expanded',aberto?'true':'false');
+  if(aberto){menu.querySelector('a').focus()}
+});
 menu.querySelectorAll('a').forEach(function(a){
-  a.addEventListener('click',function(){menu.classList.remove('open')});
+  a.addEventListener('click',fecharMenu);
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&menu.classList.contains('open')){
+    fecharMenu();
+    toggle.focus();
+  }
 });
 </script>
 
