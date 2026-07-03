@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://premiumconstrutora.com.br/sitemap.xml
+Sitemap: https://www.premiumconstrutora.com.br/sitemap.xml
